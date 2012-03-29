@@ -33,7 +33,7 @@ ENV['JTV_CONSUMER_SECRET']
 ## Usage
 
 The Jtv gem offers various classes depending on the type of information
-you're looking for.
+you're looking for. Check out the [RDOC](http://rubydoc.info/github/Mockra/Jtv/).
 
 ### JtvChannel
 The JtvChannel class provides access to stream information for a

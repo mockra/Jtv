@@ -45,6 +45,7 @@ channel = JtvChannel.new( 'channel' )
 ```
 
 You'll then have access to the following information.
+
 ```ruby
 channel.viewers
 # Number of current viewers on the stream, requires a second API call
@@ -60,10 +61,11 @@ channel.id
 
 channel.embed
 #Code required to embed the Justin.TV Player, response looks like:
-=begin
-<object type="application/x-shockwave-flash" height="295" width="353" id="jtv_player_flash" data="http://www.justin.tv/widgets/jtv_player.swf?channel=apidemo&quot; bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://www.justin.tv/widgets/jtv_player.swf&quot; /><param name="flashvars" value="channel=apidemo&auto_play=false&start_volume=25" /></object>
-=end
+```
 
+<object type="application/x-shockwave-flash" height="295" width="353" id="jtv_player_flash" data="http://www.justin.tv/widgets/jtv_player.swf?channel=apidemo&quot; bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://www.justin.tv/widgets/jtv_player.swf&quot; /><param name="flashvars" value="channel=apidemo&auto_play=false&start_volume=25" /></object>
+
+```ruby
 channel.title
 channel.url
 channel.about

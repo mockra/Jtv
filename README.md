@@ -40,12 +40,12 @@ The JtvChannel class provides access to stream information for a
 specific channel. You'll need to pass the channel handle when you
 initialize your object.
 
-``` ruby
+```ruby
 channel = JtvChannel.new( 'channel' )
 ```
 
 You'll then have access to the following information.
-``` ruby
+```ruby
 channel.viewers
 # Number of current viewers on the stream, requires a second API call
 
@@ -75,13 +75,13 @@ The JtvClip class provides access to specific clip information. To
 create a clip object, simply pass the clip id when you initialize the
 object.
 
-``` ruby
+```ruby
 clip = JtvClip.new( 1278312 )
 ```
 
 The following method calls are available through the Clip class.
 
-``` ruby
+```ruby
 clip.description
 clip.title
 clip.id

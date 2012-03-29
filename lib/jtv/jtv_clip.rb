@@ -5,6 +5,8 @@ class JtvClip
   attr_reader :description, :created_on, :length, :id, :title,
     :tags, :embed, :image_huge
 
+  # Create a new clip object, this method should be passed the clip id.
+  # Example: clip = JtvClip.new( 1894735 )
   def initialize(clip)
 
     client = Jtv::JtvClient.new

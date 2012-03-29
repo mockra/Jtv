@@ -1,5 +1,6 @@
 require "jtv/version"
 require 'jtv/jtv_channel'
+require 'jtv/jtv_clip'
 
 require 'json'
 

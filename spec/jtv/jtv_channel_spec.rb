@@ -11,4 +11,13 @@ describe JtvChannel do
 
   end
 
+  describe 'viewers' do
+
+    it 'should return an integer' do
+      channel = JtvChannel.new( 'mockra' )
+      channel.viewers.should be_a Integer
+    end
+
+  end
+
 end

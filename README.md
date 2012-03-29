@@ -34,14 +34,15 @@ ENV['JTV_CONSUMER_SECRET']
 
 ### JtvChannel
 The JtvChannel class provides access to stream information for a
-specific channel.
+specific channel. You'll need to pass the channel handle when you
+initialize your object.
 
 ``` ruby
 channel = JtvChannel.new( 'channel' )
 ```
 
 You'll then have access to the following information; however, if a
-stream is offline, these values will return nil:
+stream is offline, these values will return nil.
 
 ``` ruby
 channel.viewers

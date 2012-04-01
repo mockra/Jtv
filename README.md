@@ -106,11 +106,6 @@ Contributions and feedback are more than welcome and highly encouraged.
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-## TODO
-
-* Add JtvCategory, which will return an array of objects from a category.
-* Add support for POST API calls.
-
 ## Contact
 
 [david@mockra.com](mailto:david@mockra.com)

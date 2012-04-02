@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jtv by Mockra</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jtv</h1>
+        <p>Justin.TV API Gem</p>
+        <p class="view"><a href="https://github.com/Mockra/Jtv">View the Project on GitHub <small>Mockra/Jtv</small></a></p>
+        <ul>
+          <li><a href="https://github.com/Mockra/Jtv/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Mockra/Jtv/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Mockra/Jtv">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Jtv</h1>
+
+<p>This gem allows you to quickly add Justin.TV integration to your Ruby applications. Jtv is a useful tool for providing a list of livestreams, as well as embedding Justin.TV streams and clips.</p>
+
+<h2>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<pre><code>gem 'jtv'
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install jtv
+</code></pre>
+
+<h2>Justin.TV API Keys</h2>
+
+<p>If you want access to higher rate limits for your application, then you
+need to sign up for a <a href="http://www.justin.tv/developer/activate">Justin.TV developer account</a>.</p>
+
+<p>Once you have your API Keys, you'll need to set them up as environment
+variables for them to work with this gem. A great article on environment
+variables can be found at <a href="https://devcenter.heroku.com/articles/config-vars">Heroku</a>.</p>
+
+<div class="highlight">
+<pre><span class="no">ENV</span><span class="o">[</span><span class="s1">'JTV_CONSUMER_KEY'</span><span class="o">]</span>
+<span class="no">ENV</span><span class="o">[</span><span class="s1">'JTV_CONSUMER_SECRET'</span><span class="o">]</span>
+</pre>
+</div>
+
+
+<h2>Usage</h2>
+
+<p>The Jtv gem offers various classes depending on the type of information
+you're looking for. Check out the <a href="http://rubydoc.info/github/Mockra/Jtv/">RDOC</a>.</p>
+
+<h3>JtvChannel</h3>
+
+<p>The JtvChannel class provides access to stream information for a
+specific channel. You'll need to pass the channel handle when you
+initialize your object.</p>
+
+<div class="highlight">
+<pre><span class="n">channel</span> <span class="o">=</span> <span class="no">JtvChannel</span><span class="o">.</span><span class="n">new</span><span class="p">(</span> <span class="s1">'channel'</span> <span class="p">)</span>
+</pre>
+</div>
+
+
+<p>You'll then have access to the following information.</p>
+
+<div class="highlight">
+<pre><span class="n">channel</span><span class="o">.</span><span class="n">viewers</span>
+<span class="c1"># Number of current viewers on the stream, requires a second API call</span>
+
+<span class="n">channel</span><span class="o">.</span><span class="n">image_huge</span>
+<span class="c1"># 320x240 Image URL</span>
+
+<span class="n">channel</span><span class="o">.</span><span class="n">screen_cap_huge</span>
+<span class="c1"># 320x240 Screen Capture URL</span>
+
+<span class="n">channel</span><span class="o">.</span><span class="n">id</span>
+<span class="c1"># The channel handle</span>
+
+<span class="n">channel</span><span class="o">.</span><span class="n">embed</span>
+<span class="c1">#Code required to embed the Justin.TV Player, response looks like:</span>
+</pre>
+</div>
+
+
+<pre><code>&lt;object type="application/x-shockwave-flash" height="295" width="353" id="jtv_player_flash" data="<a href="http://www.justin.tv/widgets/jtv_player.swf?channel=apidemo&amp;quot">http://www.justin.tv/widgets/jtv_player.swf?channel=apidemo&amp;quot</a>; bgcolor="#000000"&gt;&lt;param name="allowFullScreen" value="true" /&gt;&lt;param name="allowscriptaccess" value="always" /&gt;&lt;param name="movie" value="<a href="http://www.justin.tv/widgets/jtv_player.swf&amp;quot">http://www.justin.tv/widgets/jtv_player.swf&amp;quot</a>; /&gt;&lt;param name="flashvars" value="channel=apidemo&amp;auto_play=false&amp;start_volume=25" /&gt;&lt;/object&gt;
+</code></pre>
+
+<div class="highlight">
+<pre><span class="n">channel</span><span class="o">.</span><span class="n">title</span>
+<span class="n">channel</span><span class="o">.</span><span class="n">url</span>
+<span class="n">channel</span><span class="o">.</span><span class="n">about</span>
+<span class="n">channel</span><span class="o">.</span><span class="n">description</span>
+</pre>
+</div>
+
+
+<h3>JtvClip</h3>
+
+<p>The JtvClip class provides access to specific clip information. To
+create a clip object, simply pass the clip id when you initialize the
+object.</p>
+
+<div class="highlight">
+<pre><span class="n">clip</span> <span class="o">=</span> <span class="no">JtvClip</span><span class="o">.</span><span class="n">new</span><span class="p">(</span> <span class="mi">1278312</span> <span class="p">)</span>
+</pre>
+</div>
+
+
+<p>The following method calls are available through the Clip class.</p>
+
+<div class="highlight">
+<pre><span class="n">clip</span><span class="o">.</span><span class="n">description</span>
+<span class="n">clip</span><span class="o">.</span><span class="n">title</span>
+<span class="n">clip</span><span class="o">.</span><span class="n">id</span>
+<span class="n">clip</span><span class="o">.</span><span class="n">tags</span>
+<span class="n">clip</span><span class="o">.</span><span class="n">embed</span>
+<span class="n">clip</span><span class="o">.</span><span class="n">image_huge</span>
+<span class="n">clip</span><span class="o">.</span><span class="n">length</span>
+<span class="n">clip</span><span class="o">.</span><span class="n">created_on</span>
+</pre>
+</div>
+
+
+<h2>Contributing</h2>
+
+<p>Contributions and feedback are more than welcome and highly encouraged.</p>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Added some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol><h2>Contact</h2>
+
+<p><a href="mailto:david@mockra.com">david@mockra.com</a></p>
+
+<p><a href="http://twitter.com/#!/mockra_">@Mockra_</a></p>
+
+<p><a href="http://mockra.com">mockra.com</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/Mockra">Mockra</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>

@@ -8,6 +8,17 @@ module Jtv
 
   require 'oauth'
 
+  def self.channel_viewers( channel )
+    client = Jtv::JtvClient.new
+    json_data = client.get( "/stream/list.json?channel=#{channel}" )
+    if json_data.body == "[]"
+      return nil
+    else
+      data = JSON.parse( json_data.body )
+    end
+    data[0]['stream_count'].to_i
+  end
+
   class JtvClient
 
     # Set API Keys through environment variables.

@@ -30,7 +30,7 @@ class JtvChannel
     client = Jtv::JtvClient.new
     json_data = client.get( "/stream/list.json?channel=#{self.id}" )
     if json_data.body == "[]"
-      return 0
+      return nil
     else
       data = JSON.parse( json_data.body )
     end

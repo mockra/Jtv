@@ -33,15 +33,31 @@ ENV['JTV_CONSUMER_SECRET']
 ## Usage
 
 The Jtv gem offers various classes depending on the type of information
-you're looking for. Check out the [RDOC](http://rubydoc.info/github/Mockra/Jtv/).
+you're looking for. JtvChannel and JtvClip should be used for creating records. 
+Jtv methods should be used for updating records.
+
+It's reccomended to cache your requests, and to always keep your
+account's rate limit in mind.
+
+Check out the [RDOC](http://rubydoc.info/github/Mockra/Jtv/).
+
+### Jtv
+
+```ruby
+Jtv.channel_viewers( 'channel_handle' )
+```
+
+This method will return nil if the stream is offline. Use this
+method for providing realtime viewer numbers and stream status.
 
 ### JtvChannel
+
 The JtvChannel class provides access to stream information for a
 specific channel. You'll need to pass the channel handle when you
 initialize your object.
 
 ```ruby
-channel = JtvChannel.new( 'channel' )
+channel = JtvChannel.new( 'channel_handle' )
 ```
 
 You'll then have access to the following information.
@@ -49,6 +65,11 @@ You'll then have access to the following information.
 ```ruby
 channel.viewers
 # Number of current viewers on the stream, requires a second API call
+# If the stream is offline, this will return nil
+
+Jtv.channel_viewers( 'channel_handle' )
+# This will return nil for offline streams.
+# Use this method for updating current viewers
 
 channel.image_huge
 # 320x240 Image URL
@@ -75,6 +96,7 @@ channel.description
 ```
 
 ### JtvClip
+
 The JtvClip class provides access to specific clip information. To
 create a clip object, simply pass the clip id when you initialize the
 object.

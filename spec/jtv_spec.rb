@@ -2,6 +2,15 @@ require 'spec_helper'
 
 describe Jtv do
 
+  describe 'channel_viewers' do
+
+    it 'should return nil' do
+      views = Jtv.channel_viewers( 'mockra' )
+      views.should be_nil
+    end
+
+  end
+
   describe 'JtvClient' do
 
     it 'should set the consumer_key' do

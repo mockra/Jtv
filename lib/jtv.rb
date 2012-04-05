@@ -1,6 +1,7 @@
 require "jtv/version"
 require 'jtv/jtv_channel'
 require 'jtv/jtv_clip'
+require 'jtv/jtv_search'
 
 require 'json'
 
@@ -8,6 +9,7 @@ module Jtv
 
   require 'oauth'
 
+  # Get current viewers for a specific channel
   def self.channel_viewers( channel )
     client = Jtv::JtvClient.new
     json_data = client.get( "/stream/list.json?channel=#{channel}" )

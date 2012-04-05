@@ -3,3 +3,6 @@
 
 # v0.0.2
 * Added Jtv.channel_viewers
+
+# v0.0.3
+* Added JtvSearch

@@ -50,6 +50,30 @@ Jtv.channel_viewers( 'channel_handle' )
 This method will return nil if the stream is offline. Use this
 method for providing realtime viewer numbers and stream status.
 
+### JtvSearch
+
+The JtvSearch provides access to the search api. If you pass
+JtvSearch.get a search query, it will return an array of channels.
+This class makes it easy to include a generic livestream list for your
+website.
+
+```ruby
+streams = JtvSearch.get( 'league of legends', 50 )
+# You can pass the get method a search query, as well as
+# an optional stream limit that goes up to 100 and defaults to 20
+
+streams.each do |stream|
+
+  stream.id
+  stream.title
+  stream.url
+  stream.viewers
+  stream.image_huge
+  stream.screen_cap_huge
+
+end
+```
+
 ### JtvChannel
 
 The JtvChannel class provides access to stream information for a

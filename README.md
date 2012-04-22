@@ -72,6 +72,8 @@ streams.each do |stream|
   stream.screen_cap_huge
 
 end
+
+# This will return an Array sorted by viewer count
 ```
 
 ### JtvChannel

@@ -2,7 +2,7 @@
 require File.expand_path('../lib/jtv/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Mockra"]
+  gem.authors       = ["David Ratajczak"]
   gem.email         = ["david@mockra.com"]
   gem.description   = %q{Gem for quickly accessing the Justin.TV API}
   gem.summary       = %q{This tool provides simple Rails integration for common Justin.TV API calls.}

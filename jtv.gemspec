@@ -15,6 +15,8 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Jtv::VERSION
 
+  gem.license = 'MIT'
+
   gem.add_development_dependency 'rspec'
   gem.add_dependency 'json'
   gem.add_dependency 'oauth'

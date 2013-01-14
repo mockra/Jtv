@@ -4,9 +4,9 @@ require File.expand_path('../lib/jtv/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["David Ratajczak"]
   gem.email         = ["david@mockra.com"]
-  gem.description   = %q{Gem for quickly accessing the Justin.TV API}
-  gem.summary       = %q{This tool provides simple Rails integration for common Justin.TV API calls.}
-  gem.homepage      = ""
+  gem.description   = %q{Ruby wrapper for the Justin.tv and Twitch.tv API}
+  gem.summary       = %q{Justin.tv and Twitch.tv API library}
+  gem.homepage      = "http://mockra.com"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -18,6 +18,9 @@ Gem::Specification.new do |gem|
   gem.license = 'MIT'
 
   gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'vcr'
+  gem.add_development_dependency 'fakeweb'
+  gem.add_dependency 'faraday'
   gem.add_dependency 'json'
   gem.add_dependency 'oauth'
 end

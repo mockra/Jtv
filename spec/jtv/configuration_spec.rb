@@ -1,14 +1,19 @@
 require_relative '../../lib/jtv/configuration'
+module Jtv
+  class << self
+    include Jtv::Configuration
+  end
+end
 
 describe Jtv::Configuration do
   describe '.configure' do
-    it 'provides access to writer methods' do
-      Jtv::Configuration.configure do |config|
+    it 'provides configuration for a module' do
+      Jtv.configure do |config|
         config.consumer_key = 'key'
         config.consumer_secret = 'secret'
       end
-      expect(Jtv::Configuration.consumer_secret).to eq 'secret'
-      expect(Jtv::Configuration.consumer_key).to eq 'key'
+      expect(Jtv.consumer_secret).to eq 'secret'
+      expect(Jtv.consumer_key).to eq 'key'
     end
   end
 end

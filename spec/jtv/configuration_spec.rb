@@ -1,9 +1,6 @@
 require_relative '../../lib/jtv/configuration'
-module Jtv
-  class << self
-    include Jtv::Configuration
-  end
-end
+
+module Jtv; extend Jtv::Configuration; end
 
 describe Jtv::Configuration do
   describe '.configure' do

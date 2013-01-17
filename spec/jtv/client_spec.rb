@@ -5,8 +5,8 @@ describe Jtv::Client do
   let(:request) { Object.new }
 
   describe '#get' do
-    it 'sends get to request with path and params' do
-      client.should_receive(:request).with(:get, '/test/', {})
+    it 'fetches JSON based on method, path, and params' do
+      client.should_receive(:get_json).with(:get, '/test/', {})
       client.get '/test/'
     end
   end
@@ -14,7 +14,15 @@ describe Jtv::Client do
   context 'when including defaults' do
     it 'has access to oauth details' do
       expect(client).to respond_to :oauth_token
-      expect(client).to respond_to :oauth_secret
     end
+  end
+
+  context 'when including stream' do
+    it 'has access to summary, list, and search' do
+      expect(client).to respond_to :summary
+      expect(client).to respond_to :list
+      expect(client).to respond_to :search
+    end
+
   end
 end

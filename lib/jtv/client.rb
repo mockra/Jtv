@@ -1,10 +1,13 @@
 require 'simple_oauth'
+require 'json'
 require 'faraday'
 require 'jtv/defaults'
+require 'jtv/stream'
 
 module Jtv
   class Client
     include Jtv::Defaults
+    include Jtv::Stream
 
     def initialize args = {}
       args.each do |key, value|
@@ -13,12 +16,17 @@ module Jtv
     end
 
     def get path, params = {}
-      request :get, path, params
+      get_json :get, path, params
     end
 
   private
 
-    def request method, path, params = {}
+    def get_json method, path, params
+      response = request(method, path, params)
+      JSON.parse response[:body]
+    end
+
+    def request method, path, params
       connection.send method, path, params do |req|
         req.headers[:authorization] = req_header(method, path, params).to_s
       end.env

@@ -6,3 +6,8 @@
 
 # v0.0.3
 * Added JtvSearch
+
+# v1.0.0.alpha1
+* Complete rework of the public interface
+* Includes access to Stream API
+

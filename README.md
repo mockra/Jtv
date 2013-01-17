@@ -51,7 +51,48 @@ account's rate limit in mind.
 
 Check out the [RDOC](http://rubydoc.info/github/Mockra/Jtv/).
 
-### Jtv
+### Stream
+
+#### Summary
+
+Returns aggregate stream information for all live channels (possibly scoped by
+category).
+
+```ruby
+  Jtv.summary
+  # {"average_bitrate"=>0, "streams_count"=>4346, "viewers_count"=>"142733"}
+
+  Jtv.summary channel: 'mockra'
+  # {"average_bitrate"=>0, "streams_count"=>0, "viewers_count"=>0}
+```
+
+You can include a channel, language, or category in your search params.
+
+#### List
+
+Returns stream information for all live channels. The results are sorted by the
+current number of viewers, with the most popular channels first.
+
+```ruby
+  Jtv.list category: 'gaming', limit: 1
+  # [{'name' => 'live_user_wingsofdeath'...}]
+```
+
+You can include a channel, category, title, language, limit, and offset.
+
+#### Search
+
+Returns stream information for the live channels that match a search query. The
+results are sorted by the current number of viewers, with the most popular
+channels first.
+
+```ruby
+  Jtv.search 'gaming', limit: 1
+  # [{'name' => 'live_user_steven_bonnell_ii'...}]
+```
+
+The first argument is your search query, and you can also pass limit and offset
+as params.
 
 ## Contributing
 

@@ -9,5 +9,15 @@ module Jtv
         token_secret: oauth_secret || Jtv.oauth_secret }
     end
 
+  private
+
+    def options
+      { headers: {
+          accept: 'application/json',
+          user_agent: 'Jtv Gem' },
+        request: {
+          open_timeout: 2,
+          timeout: 5 } }
+    end
   end
 end

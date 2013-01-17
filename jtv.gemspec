@@ -22,5 +22,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'fakeweb'
   gem.add_dependency 'faraday'
   gem.add_dependency 'json'
-  gem.add_dependency 'oauth'
+  gem.add_dependency 'simple_oauth'
 end

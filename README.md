@@ -33,6 +33,14 @@ below.
   end
 ```
 
+If you want to make requests on behalf of a specific user, then you need to
+instantiate a client.
+
+```ruby
+  @client = Jtv::Client.new oauth_token: 'users_token',
+    oauth_secret: 'users_secret'
+```
+
 ## Usage
 
 The Jtv gem offers various methods depending on the type of information

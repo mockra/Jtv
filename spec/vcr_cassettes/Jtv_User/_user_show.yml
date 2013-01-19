@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.justin.tv/user/show/augury.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Jtv Gem
+      authorization:
+      - OAuth oauth_nonce="97226ce4b530ec085c3d7450e7ce2a64", oauth_signature="1Om%2BMSIoNXMohwOqN0RiBUzLukQ%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1358556562", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "c2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        U2F0LCAxOSBKYW4gMjAxMyAwMDo0OToyMiBHTVQ=
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbg==
+      !binary "dHJhbnNmZXItZW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "c3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "dmlh":
+      - !binary |-
+        VHdpY2UgMC4yIHR3aWNlMTozMzQ3
+      !binary "eC1ydW50aW1l":
+      - !binary |-
+        MC4wMTkyNTY=
+      !binary "eC1nZW8=":
+      - !binary |-
+        VVM=
+      !binary "eC1yZXF1ZXN0LWlk":
+      - !binary |-
+        OWYyYTE1YmIwZjJhZTEwN2M3NzA1ZTAxZTc0YmNkZjA=
+      !binary "ZXRhZw==":
+      - !binary |-
+        IjAxODlmZmFkMzgyYWNlYTc1MDIyNGNkNTZhYTg5YWVhIg==
+      !binary "eC11YS1jb21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        bXVzdC1yZXZhbGlkYXRlLCBwcml2YXRlLCBtYXgtYWdlPTA=
+      !binary "eC1yYWNrLWNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "ZnJvbnQtZW5kLWh0dHBz":
+      - !binary |-
+        b2Zm
+      !binary "Y29udGVudC1lbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7VU227TQBD9FbNIBaQkdps6baO2qFBV4gFUUXhAsmRN1hN7
+        w3jX7MVOhPh3xjGB3l54yEor7dozc87MnpmfQtVQYh4s5V7pjZiLyvtmHsfO
+        g1dyLAs9WflWdxONPuZTHhzavFHSB4suhlAGuxk31iwVYb6NNl5ikZ4dHZ8e
+        FtN0JgHGabJOk8mqwVKM7iG6Goj2BHmSrE/+QpKRnI3RjPWBSGmj3Cj6enfF
+        bJbQGqs85j+C8ejYIhPvrz5dX317kYlo/M6CLoxOkzSzmc7EtYkgWiBYixRZ
+        Q7SzKqLXx7e3bwarLxX4Vy5ypsbos9Jl5CrlH1n2lSjE/PRkdnx6NhuJhTVQ
+        SHAerZjrQDQSWC+wyKUpkGlFvM7NYoXSR37T4EUmoGlIDZnF67GrjPzeQcv1
+        J3AVs69QlZVnw6OzlK+dKnzFt2k65Zsq+EiqxXyAaQg2/LI73wI8sMEfNXRd
+        N1kFxxKZ+DbmQCV6Fz/xnrhu+VZWoDXSxSANRlqU0pCxHO1lsl2ZuDxvwEId
+        aai3iRCZ7oZzvpMWkcsctUCh/+NtQL7Gzzk4aVXjQUp07p4LUAeb/sNjp9q0
+        qg+2i/3/uT0TdFuvFuwDBsGbvK/nxRLI4cHDihxwa1mft4YCJ3+UDkHj4Wkv
+        My3ut0iNhQr1nnrkkPuS99PGrELZS24fo2CWJGveO0yHawb6CIScdq+Gnfb/
+        zSUCuzc2U2bDe8eGTKn6ITFIlxnxXMtZYCZoL+bbx/z1G9n8kQEzBQAA
+    http_version: !binary |-
+      MS4x
+  recorded_at: Sat, 19 Jan 2013 00:49:22 GMT
+recorded_with: VCR 2.4.0

@@ -23,6 +23,12 @@ describe Jtv::Client do
       expect(client).to respond_to :list
       expect(client).to respond_to :search
     end
+  end
 
+  context 'when including user' do
+    it 'has access to show and favorites' do
+      expect(client).to respond_to :user_show
+      expect(client).to respond_to :favorites
+    end
   end
 end

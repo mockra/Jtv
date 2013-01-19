@@ -3,11 +3,13 @@ require 'json'
 require 'faraday'
 require 'jtv/defaults'
 require 'jtv/stream'
+require 'jtv/user'
 
 module Jtv
   class Client
     include Jtv::Defaults
     include Jtv::Stream
+    include Jtv::User
 
     def initialize args = {}
       args.each do |key, value|

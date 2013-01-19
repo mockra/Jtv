@@ -94,6 +94,30 @@ channels first.
 The first argument is your search query, and you can also pass limit and offset
 as params.
 
+### User
+
+#### Show
+
+Returns extended information for a user, specified by user id or login.
+
+```ruby
+  Jtv.user_show 'mockra'
+  # {"id"=>22056792...}
+```
+
+Pass in a user's login.
+
+#### Favorites
+
+Get all channels who are favorites of a user.
+
+```ruby
+  Jtv.favorites 'mockra'
+  # [{}]
+```
+
+Pass in a user's login.
+
 ## Contributing
 
 Contributions and feedback are more than welcome and highly encouraged.

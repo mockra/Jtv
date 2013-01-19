@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.justin.tv/user/favorites/augury.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Jtv Gem
+      authorization:
+      - OAuth oauth_nonce="babbda4003e3f414cfc155579ecba8c8", oauth_signature="3AMUOG67XZIemcHEPf1W7ewmOfw%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1358556562", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "c2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        U2F0LCAxOSBKYW4gMjAxMyAwMDo0OToyMiBHTVQ=
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbg==
+      !binary "dHJhbnNmZXItZW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Y29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "c3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "dmlh":
+      - !binary |-
+        VHdpY2UgMC4yIHR3aWNlMjozMzQx
+      !binary "eC1ydW50aW1l":
+      - !binary |-
+        MC4wMzIxOTI=
+      !binary "eC1nZW8=":
+      - !binary |-
+        VVM=
+      !binary "eC1yZXF1ZXN0LWlk":
+      - !binary |-
+        ZDg5NDFmYjdmYTkzN2UzMzEyMDQyN2Y0ZDY0MjdkOTI=
+      !binary "ZXRhZw==":
+      - !binary |-
+        ImRmMmUzODA2ZWIyYzA1NzQyMjU2MTYyZTc0YzQ1NGVjIg==
+      !binary "eC11YS1jb21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        bXVzdC1yZXZhbGlkYXRlLCBwcml2YXRlLCBtYXgtYWdlPTA=
+      !binary "eC1yYWNrLWNhY2hl":
+      - !binary |-
+        bWlzcw==
+      !binary "c2V0LWNvb2tpZQ==":
+      - !binary |-
+        bGFuZ3VhZ2U9ZW47IGRvbWFpbj0udHdpdGNoLnR2OyBwYXRoPS87IGV4cGly
+        ZXM9V2VkLCAxOS1KYW4tMjAzMyAwMDo0OToyMiBHTVQ=
+      !binary "ZnJvbnQtZW5kLWh0dHBz":
+      - !binary |-
+        b2Zm
+      !binary "Y29udGVudC1lbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA+2XbW/bNhDHvwqrAd2GxZZkWXIcJB3Wh3R9FywY9qIpBJqi
+        bGYUKZCUZW/od+9RD5Ecu4OyOikKNIADE+bxeLzj/8d7/6+jiaJUxATncaF4
+        nNGEFZlz5qyMyc9cVxtsGBmRRIxvzVqUY0GNmyu6ZrTULmdrGheaqjiVhco5
+        3lKVy4RgbUZ+6G18Pxjf5kvnxOFYLAu8pLAyFTA2zHA7mF5VRuiqtoJfdLEg
+        2NClVFvnTBScnzjd2FnijAm7IM0WNImpwAtOE+fMqIKeOCwDF1Uchgkw/88o
+        IJ567zkjplBUu/tB5EqmjNO4WniEw9lsks6nQRoQ4oXhCEIMPYiQ2h11znWG
+        OX987zNvM7vzbhNVaHD6Dp0H6FKxBG/1M/T+raJbNEJ/YJHIDL3FGdUfYLMZ
+        zFaQgBRzDQdnWEb/kcJm5M9r9xUVRmEO06o0x0QWwthkTaLTaO57Nku7ZbMq
+        qtR+cdFEgbeZztqiYZDYSeTP/LDNN5GJ9YPg71wubikxyGxzenHj4DznDAqF
+        SeFuRnolyd8lXtNRyrFe3ThoRdlyZWDiZB7CsGSJWcEoCAMYsQS+VsVcl1Vd
+        yXFrm2CDYUITXVmW49tCQ4WNzdqFhZbUNFehbz3WZforWWEhKL/YqyxwulgS
+        yaWChX/wqr8b58V5jhXOkIA02Zg4l+UlXIHr6rTBZo15YX+x5Q5D95ABpIbl
+        BhNCte6ZYF5CRRwwyiRkuTfx4WEeWLQ6ujVWOzsojIzt0V5UVff8s4fzHIpZ
+        mXgteQHnMAnr9d064S9urH7cqz+O1XEKMJh4m8nU3ip7pZsdWkXpqns3/3uZ
+        tWaNfoEK1SoH165WrU4jBgntESSqkuFDIjXgyh7BfeR5G/i0GnkvbUOEchBs
+        QArDVjV6AGkTUGOkO/wh5XKE4AMIHj5t8AYvrUAHkYcAY1Tb/1AWKGNESS1T
+        gwQThoJQI3tLKvRKgRqgolwHSEuxRWuWUFn/r9cpGUObhdxA6XG5ZAKcHCpL
+        gFlSEKpqWn48ORr8F8rSRYReOJD6L2uDH7UFkj2Ca6Mozuy9/nr070Wxi/2U
+        RMQnaeJ75DT0FrTBfl69Q76U+sO91rivvd7R/gqbFZIperOBZwpQDUbN4aKf
+        rl79DBtsSV/fgR7of8uoAmK6r6lRkhmYukv7wD+dR7NwX2wHKMeBS9sLdJ/y
+        URTO/XDyrWO+i/E73zu+d6fyZGDvFduDid7ZPi7Kh9/8luH3FWfARdyn2HC3
+        Lbsbydl98f9PdPe8Pwmzh0fbwrqOtmF1Z46arxo1j8KG3j3m7hTOo8FWcLOC
+        165Un2ct9Ehdh3033wr516Nrt+1duCan09lpiqPpLKFJFPrH7akHez3cS0/g
+        CvyC6CZHf2GlmFTIdREK1vASq1D7u+3WoMlZIXgAocvCAISf9Zi7312/KZTM
+        qfuSKg7vtPvI9YMw9I8F3C72fd4G3mw6nU/9bx24dzF+523H27tDeTLcdqX2
+        YNr25ekR++bBQnDcfnmw20fpkzvvT8LawcEe7Ivr/qTtX/tl0aG00tOPHz4B
+        gh0r9bcWAAA=
+    http_version: !binary |-
+      MS4x
+  recorded_at: Sat, 19 Jan 2013 00:49:22 GMT
+recorded_with: VCR 2.4.0

@@ -6,8 +6,8 @@ describe Jtv::Stream do
     use_vcr_cassette
 
     it 'fetches a live channel' do
-      summary = Jtv.summary channel: 'wingsofdeath'
-      expect(summary['viewers_count']).to eq '14175'
+      summary = Jtv.summary
+      expect(summary['streams_count']).to be > 0
     end
   end
 
@@ -17,7 +17,7 @@ describe Jtv::Stream do
     it 'returns a list of streams for a category' do
       list = Jtv.list category: 'gaming'
       expect(list.count).to eq 50
-      expect(list.first['title']).to match(/wingsofdeath/i)
+      expect(list.first['category']).to match(/gaming/i)
     end
   end
 

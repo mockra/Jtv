@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.justin.tv/stream/summary?channel=wingsofdeath
+    uri: http://api.justin.tv/stream/summary
     body:
       encoding: US-ASCII
       string: ''
@@ -12,8 +12,8 @@ http_interactions:
       user-agent:
       - Jtv Gem
       authorization:
-      - OAuth oauth_nonce="ae43109b690d2a5b645a8d4893af919c", oauth_signature="BRkYUrdFelmk9JqzmmKeUBuCByc%3D",
-        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1358401033", oauth_version="1.0"
+      - OAuth oauth_nonce="053d3259ac27b9b35f470f2b80a0c725", oauth_signature="De6kdCYb%2BjoEzrh8QLa63FO%2FSpk%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1358554691", oauth_version="1.0"
       accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -27,7 +27,7 @@ http_interactions:
         bmdpbng=
       !binary "ZGF0ZQ==":
       - !binary |-
-        VGh1LCAxNyBKYW4gMjAxMyAwNTozNzoxNCBHTVQ=
+        U2F0LCAxOSBKYW4gMjAxMyAwMDoxODoxMiBHTVQ=
       !binary "Y29udGVudC10eXBl":
       - !binary |-
         YXBwbGljYXRpb24vanNvbg==
@@ -42,16 +42,19 @@ http_interactions:
         MjAwIE9L
       !binary "dmlh":
       - !binary |-
-        VHdpY2UgMC4yIHR3aWNlMzozMzYw
-      !binary "eC1yZXF1ZXN0LWlk":
+        VHdpY2UgMC4yIHR3aWNlMzozMzQ4
+      !binary "eC1ydW50aW1l":
       - !binary |-
-        MGFkNWUxY2Y1MDRlY2U2M2FhMTM1OTIwMzkyNGJhNWY=
+        MC4wMDc1NTU=
       !binary "eC1nZW8=":
       - !binary |-
         VVM=
+      !binary "eC1yZXF1ZXN0LWlk":
+      - !binary |-
+        OTU1OWMxZDM4ZWJiODkzYWNiNjkxZWM3NGYxNzk4MzY=
       !binary "ZXRhZw==":
       - !binary |-
-        IjA3Yjc3ZmU1MGI4NzdiMGI1MTNjYzExMmE0YzhlZGNiIg==
+        IjRjYjU5NmM4YjhlODNkMDljZGZiZDA0M2FiNDFhYTY0Ig==
       !binary "eC11YS1jb21wYXRpYmxl":
       - !binary |-
         SUU9RWRnZSxjaHJvbWU9MQ==
@@ -61,9 +64,6 @@ http_interactions:
       !binary "eC1yYWNrLWNhY2hl":
       - !binary |-
         bWlzcw==
-      !binary "eC1ydW50aW1l":
-      - !binary |-
-        MC4wMDgxMDE=
       !binary "ZnJvbnQtZW5kLWh0dHBz":
       - !binary |-
         b2Zm
@@ -74,8 +74,8 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         H4sIAAAAAAAAA6tWSixLLUpMT41PyiwpSixJVbIy0FEqLilKTcwtjk/OL80r
-        UbIy1FEqy0wtTy2CiygZmhiamyrVAgB6OGUxPwAAAA==
+        UbIyMzIGCpZlppanFsEFlYzMTMwsTZVqAUijEPhDAAAA
     http_version: !binary |-
       MS4x
-  recorded_at: Thu, 17 Jan 2013 05:37:14 GMT
+  recorded_at: Sat, 19 Jan 2013 00:18:12 GMT
 recorded_with: VCR 2.4.0

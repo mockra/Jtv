@@ -11,3 +11,5 @@
 * Complete rework of the public interface
 * Includes access to Stream API
 
+# v1.0.0.beta1
+* Added access to User API

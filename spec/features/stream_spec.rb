@@ -5,7 +5,7 @@ describe Jtv::Stream do
   describe '#summary' do
     use_vcr_cassette
 
-    it 'fetches a live channel' do
+    it 'returns a summary of Jutstin.tv data' do
       summary = Jtv.summary
       expect(summary['streams_count']).to be > 0
     end

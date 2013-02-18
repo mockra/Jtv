@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.justin.tv/channel/archives?id=dotahut&limit=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Jtv Gem
+      authorization:
+      - OAuth oauth_nonce="e541c35cc3c7205c58041cd16a4947ee", oauth_signature="4xc0Y%2BX8xo1eH2W%2FCsXiywu2DS0%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1361145200", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Sun, 17 Feb 2013 23:53:21 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      status:
+      - 200 OK
+      via:
+      - Twice 0.2 twice2:3361
+      x-runtime:
+      - '0.406080'
+      x-geo:
+      - US
+      x-request-id:
+      - a6ba43b535c242f80e7538c062cb67a6
+      etag:
+      - '"69d23dbdb82971fa60ad0740024a8500"'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      cache-control:
+      - must-revalidate, private, max-age=0
+      x-rack-cache:
+      - miss
+      set-cookie:
+      - language=en; domain=.twitch.tv; path=/; expires=Thu, 17-Feb-2033 23:53:20
+        GMT
+      front-end-https:
+      - 'off'
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '[{"image_url_medium":"http://static-cdn.jtvnw.net/jtv.thumbs/archive-368105393-320x240.jpg","video_rotation":"0","created_on":"2013-02-16
+        22:36:52 UTC","title":"DotaHut Invitational: No Tidehunter vs. Team Liquid
+        (bo3 casted by Maut)","filtered":"unchecked","stream_name":"live_user_dotahut","video_bitrate":"1634887.0","broadcaster":"delay","save_forever":"false","broadcast_id":"4881010784","updated_on":"2013-02-16
+        22:36:55 UTC","file_name":"2013-2-16/live_user_dotahut_1361053132.flv","id":"368105393","broadcast_part":"6","origin_name":"3810080","file_size":"216827014","audio_codec":"aac","deleted_by_user":"false","user_id":"38409951","tag_list":"","keyframes":"","length":"1061","video_file_url":"http://media22.justin.tv/archives/2013-2-16/live_user_dotahut_1361053132.flv","servers":"23","video_codec":"AVC","last_part":"true","start_time":"2013-02-16
+        22:18:52 UTC"},{"image_url_medium":"http://static-cdn.jtvnw.net/jtv.thumbs/archive-368099460-320x240.jpg","video_rotation":"0","created_on":"2013-02-16
+        22:19:10 UTC","title":"DotaHut Invitational: No Tidehunter vs. Team Liquid
+        (bo3 casted by Maut)","filtered":"unchecked","stream_name":"live_user_dotahut","video_bitrate":"1024628.0","broadcaster":"delay","save_forever":"false","broadcast_id":"4881010784","updated_on":"2013-02-16
+        22:19:12 UTC","file_name":"2013-2-16/live_user_dotahut_1361051335.flv","id":"368099460","broadcast_part":"5","origin_name":"3810080","file_size":"230157225","audio_codec":"aac","deleted_by_user":"false","user_id":"38409951","tag_list":"","keyframes":"","length":"1797","video_file_url":"http://media32.justin.tv/archives/2013-2-16/live_user_dotahut_1361051335.flv","servers":"34","video_codec":"AVC","last_part":"false","start_time":"2013-02-16
+        21:48:55 UTC"}]'
+    http_version: '1.1'
+  recorded_at: Sun, 17 Feb 2013 23:53:21 GMT
+recorded_with: VCR 2.4.0

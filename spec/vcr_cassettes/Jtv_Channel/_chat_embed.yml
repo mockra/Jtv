@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.justin.tv/stream/summary
+    uri: http://api.justin.tv/channel/chat_embed/justin?height=50
     body:
       encoding: US-ASCII
       string: ''
@@ -12,8 +12,8 @@ http_interactions:
       user-agent:
       - Jtv Gem
       authorization:
-      - OAuth oauth_nonce="533b89ff8d740b4afbb194866f8c3678", oauth_signature="FTVMG1TYKcDw2aip6jRe3RueIks%3D",
-        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1361144284", oauth_version="1.0"
+      - OAuth oauth_nonce="79416dd1287d38a41b528ef0a16e792d", oauth_signature="BBbGYL27NQCtGivsiK2l8cXNoTc%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1361146619", oauth_version="1.0"
       accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -24,9 +24,9 @@ http_interactions:
       server:
       - nginx
       date:
-      - Sun, 17 Feb 2013 23:38:05 GMT
+      - Mon, 18 Feb 2013 00:16:59 GMT
       content-type:
-      - application/json
+      - application/json; charset=utf-8
       transfer-encoding:
       - chunked
       connection:
@@ -34,15 +34,15 @@ http_interactions:
       status:
       - 200 OK
       via:
-      - Twice 0.2 twice6:3347
+      - Twice 0.2 twice2:3349
       x-runtime:
-      - '0.026084'
+      - '0.012019'
       x-geo:
       - US
       x-request-id:
-      - 064c4e41308a2d0b9736478a9d1b2167
+      - ceaf57ac7f9577b8aeba91d9e057987d
       etag:
-      - '"6fd3f8f82a2ce11fef7c3e736cce192f"'
+      - '"25e067f6064fecc3520ba142a2713231"'
       x-ua-compatible:
       - IE=Edge,chrome=1
       cache-control:
@@ -55,7 +55,11 @@ http_interactions:
       - gzip
     body:
       encoding: UTF-8
-      string: '{"average_bitrate":0,"streams_count":6384,"viewers_count":"270895"}'
+      string: |2
+            <iframe
+             style="width:450px;height:50px;"
+             src="http://www.justin.tv/chat/embed?channel=justin&hide_chat=&default_chat=jtv&tweet_suffix=&over_18=false">
+             </iframe>
     http_version: '1.1'
-  recorded_at: Sun, 17 Feb 2013 23:38:05 GMT
+  recorded_at: Mon, 18 Feb 2013 00:16:59 GMT
 recorded_with: VCR 2.4.0

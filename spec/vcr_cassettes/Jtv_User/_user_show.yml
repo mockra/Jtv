@@ -12,81 +12,58 @@ http_interactions:
       user-agent:
       - Jtv Gem
       authorization:
-      - OAuth oauth_nonce="97226ce4b530ec085c3d7450e7ce2a64", oauth_signature="1Om%2BMSIoNXMohwOqN0RiBUzLukQ%3D",
-        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1358556562", oauth_version="1.0"
+      - OAuth oauth_nonce="bd9d04ad294fc8d2844071714148d867", oauth_signature="TV7HiNYAAXcvNvICVRj8i5opJh0%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1361144289", oauth_version="1.0"
       accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
-      message: !binary |-
-        T0s=
+      message: OK
     headers:
-      !binary "c2VydmVy":
-      - !binary |-
-        bmdpbng=
-      !binary "ZGF0ZQ==":
-      - !binary |-
-        U2F0LCAxOSBKYW4gMjAxMyAwMDo0OToyMiBHTVQ=
-      !binary "Y29udGVudC10eXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbg==
-      !binary "dHJhbnNmZXItZW5jb2Rpbmc=":
-      - !binary |-
-        Y2h1bmtlZA==
-      !binary "Y29ubmVjdGlvbg==":
-      - !binary |-
-        Y2xvc2U=
-      !binary "c3RhdHVz":
-      - !binary |-
-        MjAwIE9L
-      !binary "dmlh":
-      - !binary |-
-        VHdpY2UgMC4yIHR3aWNlMTozMzQ3
-      !binary "eC1ydW50aW1l":
-      - !binary |-
-        MC4wMTkyNTY=
-      !binary "eC1nZW8=":
-      - !binary |-
-        VVM=
-      !binary "eC1yZXF1ZXN0LWlk":
-      - !binary |-
-        OWYyYTE1YmIwZjJhZTEwN2M3NzA1ZTAxZTc0YmNkZjA=
-      !binary "ZXRhZw==":
-      - !binary |-
-        IjAxODlmZmFkMzgyYWNlYTc1MDIyNGNkNTZhYTg5YWVhIg==
-      !binary "eC11YS1jb21wYXRpYmxl":
-      - !binary |-
-        SUU9RWRnZSxjaHJvbWU9MQ==
-      !binary "Y2FjaGUtY29udHJvbA==":
-      - !binary |-
-        bXVzdC1yZXZhbGlkYXRlLCBwcml2YXRlLCBtYXgtYWdlPTA=
-      !binary "eC1yYWNrLWNhY2hl":
-      - !binary |-
-        bWlzcw==
-      !binary "ZnJvbnQtZW5kLWh0dHBz":
-      - !binary |-
-        b2Zm
-      !binary "Y29udGVudC1lbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
+      server:
+      - nginx
+      date:
+      - Sun, 17 Feb 2013 23:38:09 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      status:
+      - 200 OK
+      via:
+      - Twice 0.2 twice5:3346
+      x-runtime:
+      - '0.029121'
+      x-geo:
+      - US
+      x-request-id:
+      - 9b0de9f84796ee688981ef63f42f1bc1
+      etag:
+      - '"f635a8225b58c33368b9fc616ab68187"'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      cache-control:
+      - must-revalidate, private, max-age=0
+      x-rack-cache:
+      - miss
+      front-end-https:
+      - 'off'
+      content-encoding:
+      - gzip
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAA7VU227TQBD9FbNIBaQkdps6baO2qFBV4gFUUXhAsmRN1hN7
-        w3jX7MVOhPh3xjGB3l54yEor7dozc87MnpmfQtVQYh4s5V7pjZiLyvtmHsfO
-        g1dyLAs9WflWdxONPuZTHhzavFHSB4suhlAGuxk31iwVYb6NNl5ikZ4dHZ8e
-        FtN0JgHGabJOk8mqwVKM7iG6Goj2BHmSrE/+QpKRnI3RjPWBSGmj3Cj6enfF
-        bJbQGqs85j+C8ejYIhPvrz5dX317kYlo/M6CLoxOkzSzmc7EtYkgWiBYixRZ
-        Q7SzKqLXx7e3bwarLxX4Vy5ypsbos9Jl5CrlH1n2lSjE/PRkdnx6NhuJhTVQ
-        SHAerZjrQDQSWC+wyKUpkGlFvM7NYoXSR37T4EUmoGlIDZnF67GrjPzeQcv1
-        J3AVs69QlZVnw6OzlK+dKnzFt2k65Zsq+EiqxXyAaQg2/LI73wI8sMEfNXRd
-        N1kFxxKZ+DbmQCV6Fz/xnrhu+VZWoDXSxSANRlqU0pCxHO1lsl2ZuDxvwEId
-        aai3iRCZ7oZzvpMWkcsctUCh/+NtQL7Gzzk4aVXjQUp07p4LUAeb/sNjp9q0
-        qg+2i/3/uT0TdFuvFuwDBsGbvK/nxRLI4cHDihxwa1mft4YCJ3+UDkHj4Wkv
-        My3ut0iNhQr1nnrkkPuS99PGrELZS24fo2CWJGveO0yHawb6CIScdq+Gnfb/
-        zSUCuzc2U2bDe8eGTKn6ITFIlxnxXMtZYCZoL+bbx/z1G9n8kQEzBQAA
-    http_version: !binary |-
-      MS4x
-  recorded_at: Sat, 19 Jan 2013 00:49:22 GMT
+      encoding: UTF-8
+      string: '{"location":"Illinois, USA","image_url_huge":"http://static-cdn.jtvnw.net/jtv_user_pictures/augury-profile_image-fed592481d356caa-600x600.jpeg","favorite_quotes":"\"CANDAY!\"
+        -Brandon505\r\n\"Do a bearrel roll!\" -Brad (4PP)\r\n\"That''s some Ring shit!\"
+        -Brad (4PP)","image_url_large":"http://static-cdn.jtvnw.net/jtv_user_pictures/augury-profile_image-fed592481d356caa-300x300.jpeg","sex":"Male","id":8764896,"broadcaster":null,"image_url_medium":"http://static-cdn.jtvnw.net/jtv_user_pictures/augury-profile_image-fed592481d356caa-150x150.jpeg","image_url_small":"http://static-cdn.jtvnw.net/jtv_user_pictures/augury-profile_image-fed592481d356caa-70x70.jpeg","pro_account":false,"embed_code":"    <object
+        type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
+        data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=augury\"
+        bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
+        name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
+        /><param name=\"flashvars\" value=\"auto_play=false&channel=augury&start_volume=25\"
+        /></object>\n","name":null,"image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/augury-profile_image-fed592481d356caa-50x50.jpeg","login":"augury"}'
+    http_version: '1.1'
+  recorded_at: Sun, 17 Feb 2013 23:38:09 GMT
 recorded_with: VCR 2.4.0

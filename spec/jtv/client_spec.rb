@@ -31,4 +31,14 @@ describe Jtv::Client do
       expect(client).to respond_to :favorites
     end
   end
+
+  context 'when including channel' do
+    it 'has access to show, stream_key, fans, and archives' do
+      expect(client).to respond_to :channel_show
+      expect(client).to respond_to :fans
+      expect(client).to respond_to :archives
+      expect(client).to respond_to :embed
+      expect(client).to respond_to :chat_embed
+    end
+  end
 end

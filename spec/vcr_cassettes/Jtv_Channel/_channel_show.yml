@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.justin.tv/channel/show/apidemo.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      user-agent:
+      - Jtv Gem
+      authorization:
+      - OAuth oauth_nonce="e9b614f8fc8dce95e06bdf0bf6e72541", oauth_signature="fNyZH0%2BLWrVtZKkMUixycLvZCV8%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1361145401", oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Sun, 17 Feb 2013 23:56:41 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      status:
+      - 200 OK
+      via:
+      - Twice 0.2 twice5:3342
+      x-runtime:
+      - '0.014367'
+      x-geo:
+      - US
+      x-request-id:
+      - 0b1d90263707c6bdcdbc52abee3641ee
+      etag:
+      - '"bfaefa574dd7d39f6d74ff48befc9bc1"'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      cache-control:
+      - must-revalidate, private, max-age=0
+      x-rack-cache:
+      - miss
+      set-cookie:
+      - language=en; domain=.twitch.tv; path=/; expires=Thu, 17-Feb-2033 23:56:41
+        GMT
+      front-end-https:
+      - 'off'
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_apidemo-630x473.jpg","timezone":"America/Los_Angeles","tags":null,"category_title":"Animals","subcategory":"other_animals","category":"animals","about":null,"views_count":"38302","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_apidemo-320x240.jpg","status":null,"channel_background_image_url":null,"embed_enabled":true,"image_url_huge":"http://www-cdn.jtvnw.net/images/xarth/404_user_600x600.png","channel_url":"http://www.justin.tv/apidemo","subcategory_title":"Other
+        Animals","title":"API demo (in HD)","channel_link_color":"#0066CC","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_apidemo-70x53.jpg","mature":null,"channel_header_image_url":null,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_apidemo-150x113.jpg","image_url_large":"http://www-cdn.jtvnw.net/images/xarth/404_user_300x300.png","id":6285586,"channel_column_color":"#FFFFFF","image_url_medium":"http://www-cdn.jtvnw.net/images/xarth/404_user_150x150.png","producer":false,"image_url_small":"http://www-cdn.jtvnw.net/images/xarth/404_user_70x70.png","channel_background_color":"#E1E3E6","anonymous_chatters_allowed":false,"embed_code":"    <object
+        type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
+        data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=apidemo\"
+        bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
+        name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
+        /><param name=\"flashvars\" value=\"auto_play=false&channel=apidemo&start_volume=25\"
+        /></object>\n","image_url_tiny":"http://www-cdn.jtvnw.net/images/xarth/404_user_50x50.png","language":"en","login":"apidemo","channel_text_color":"#222222","description":null}'
+    http_version: '1.1'
+  recorded_at: Sun, 17 Feb 2013 23:56:41 GMT
+recorded_with: VCR 2.4.0

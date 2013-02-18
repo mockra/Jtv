@@ -118,6 +118,71 @@ Get all channels who are favorites of a user.
 
 Pass in a user's login.
 
+### Channel
+
+#### Show
+
+Returns extended information for a channel, specified by channel id or login.
+Requires OAuth authentication for private channels.
+
+```ruby
+  Jtv.channel_show 'apidemo'
+  # {'login'=>'apidemo'...}
+```
+
+Pass in a login or id for the channel.
+
+#### Fans
+
+Get users who are fans of a channel. Requires OAuth authentication for private
+channels.
+
+```ruby
+  Jtv.fans id: 'officecam'
+  # [{'id'=>23}]
+```
+
+Login must be included for the channel. Optional limit and offset params
+(defaults are 20 for limit and 0 for offset). Results returned are limited to
+100. Results are returned in create date order.
+
+#### Archives
+
+Get archives from a given channel. Requires OAuth authentication for private
+channels.
+
+```ruby
+  Jtv.archives id: 'dotahut', limit: 2
+  # [{'video_codec' => 'AVC'}, {}]
+```
+
+channel id or login must be included as a param. Optional limit and offset
+params (defaults are 20 for limit and 0 for offset). Results returned are
+limited to 100. Results are returned in create date order
+
+#### Embed
+
+Get embed code for a channel.
+
+```ruby
+  Jtv.embed 'justin', volume: 50
+  # "<object></object>"
+```
+
+You can supply params volume, publisher_guard (for the default channel password
+to try), height, width, and watermark_position
+
+#### Chat Embed
+
+Get chat embed code for a channel.
+
+```ruby
+  Jtv.chat_embed 'justin', height: 1000
+  # "<iframe></iframe>"
+```
+
+You can supply params height and width.
+
 ## Contributing
 
 Contributions and feedback are more than welcome and highly encouraged.

@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Jtv by Mockra</title>
-    
+    <title>Jtv by mockra</title>
+
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,17 +17,20 @@
       <header>
         <h1>Jtv</h1>
         <p>Justin.TV API Gem</p>
-        <p class="view"><a href="https://github.com/Mockra/Jtv">View the Project on GitHub <small>Mockra/Jtv</small></a></p>
+
+        <p class="view"><a href="https://github.com/mockra/Jtv">View the Project on GitHub <small>mockra/Jtv</small></a></p>
+
+
         <ul>
-          <li><a href="https://github.com/Mockra/Jtv/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/Mockra/Jtv/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/Mockra/Jtv">Fork On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/mockra/Jtv/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mockra/Jtv/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mockra/Jtv">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
         <h1>Jtv</h1>
 
-<p>This gem allows you to quickly add Justin.TV integration to your Ruby applications. Jtv is a useful tool for providing a list of livestreams, as well as embedding Justin.TV streams and clips.</p>
+<p>This library provides a complete wrapper for the Justin.TV and Twitch.TV APIs.</p>
 
 <h2>Installation</h2>
 
@@ -52,93 +54,155 @@
 <p>If you want access to higher rate limits for your application, then you
 need to sign up for a <a href="http://www.justin.tv/developer/activate">Justin.TV developer account</a>.</p>
 
-<p>Once you have your API Keys, you'll need to set them up as environment
-variables for them to work with this gem. A great article on environment
-variables can be found at <a href="https://devcenter.heroku.com/articles/config-vars">Heroku</a>.</p>
+<p>Once you have your API Keys, you can set them up using the configuration guide
+below.</p>
 
-<div class="highlight">
-<pre><span class="no">ENV</span><span class="o">[</span><span class="s1">'JTV_CONSUMER_KEY'</span><span class="o">]</span>
-<span class="no">ENV</span><span class="o">[</span><span class="s1">'JTV_CONSUMER_SECRET'</span><span class="o">]</span>
-</pre>
-</div>
+<h2>Configuration</h2>
 
+<div class="highlight"><pre>  <span class="no">Jtv</span><span class="o">.</span><span class="n">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+    <span class="n">config</span><span class="o">.</span><span class="n">consumer_key</span> <span class="o">=</span> <span class="no">YOUR_CONSUMER_KEY</span>
+    <span class="n">config</span><span class="o">.</span><span class="n">consumer_secret</span> <span class="o">=</span> <span class="no">YOUR_CONSUMER_SECRET</span>
+  <span class="k">end</span>
+</pre></div>
+
+<p>If you want to make requests on behalf of a specific user, then you need to
+instantiate a client.</p>
+
+<div class="highlight"><pre>  <span class="vi">@client</span> <span class="o">=</span> <span class="no">Jtv</span><span class="o">::</span><span class="no">Client</span><span class="o">.</span><span class="n">new</span> <span class="n">oauth_token</span><span class="p">:</span> <span class="s1">'users_token'</span><span class="p">,</span>
+    <span class="n">oauth_secret</span><span class="p">:</span> <span class="s1">'users_secret'</span>
+</pre></div>
 
 <h2>Usage</h2>
 
-<p>The Jtv gem offers various classes depending on the type of information
-you're looking for. Check out the <a href="http://rubydoc.info/github/Mockra/Jtv/">RDOC</a>.</p>
+<p>The Jtv gem offers various methods depending on the type of information
+you're looking for.</p>
 
-<h3>JtvChannel</h3>
+<p>It's recommended to cache your requests, and to always keep your
+account's rate limit in mind.</p>
 
-<p>The JtvChannel class provides access to stream information for a
-specific channel. You'll need to pass the channel handle when you
-initialize your object.</p>
+<p>Check out the <a href="http://rubydoc.info/github/Mockra/Jtv/">RDOC</a>.</p>
 
-<div class="highlight">
-<pre><span class="n">channel</span> <span class="o">=</span> <span class="no">JtvChannel</span><span class="o">.</span><span class="n">new</span><span class="p">(</span> <span class="s1">'channel'</span> <span class="p">)</span>
-</pre>
-</div>
+<h3>Stream</h3>
 
+<h4>Summary</h4>
 
-<p>You'll then have access to the following information.</p>
+<p>Returns aggregate stream information for all live channels (possibly scoped by
+category).</p>
 
-<div class="highlight">
-<pre><span class="n">channel</span><span class="o">.</span><span class="n">viewers</span>
-<span class="c1"># Number of current viewers on the stream, requires a second API call</span>
+<div class="highlight"><pre>  <span class="no">Jtv</span><span class="o">.</span><span class="n">summary</span>
+  <span class="c1"># {"average_bitrate"=&gt;0, "streams_count"=&gt;4346, "viewers_count"=&gt;"142733"}</span>
 
-<span class="n">channel</span><span class="o">.</span><span class="n">image_huge</span>
-<span class="c1"># 320x240 Image URL</span>
+  <span class="no">Jtv</span><span class="o">.</span><span class="n">summary</span> <span class="n">channel</span><span class="p">:</span> <span class="s1">'mockra'</span>
+  <span class="c1"># {"average_bitrate"=&gt;0, "streams_count"=&gt;0, "viewers_count"=&gt;0}</span>
+</pre></div>
 
-<span class="n">channel</span><span class="o">.</span><span class="n">screen_cap_huge</span>
-<span class="c1"># 320x240 Screen Capture URL</span>
+<p>You can include a channel, language, or category in your search params.</p>
 
-<span class="n">channel</span><span class="o">.</span><span class="n">id</span>
-<span class="c1"># The channel handle</span>
+<h4>List</h4>
 
-<span class="n">channel</span><span class="o">.</span><span class="n">embed</span>
-<span class="c1">#Code required to embed the Justin.TV Player, response looks like:</span>
-</pre>
-</div>
+<p>Returns stream information for all live channels. The results are sorted by the
+current number of viewers, with the most popular channels first.</p>
 
+<div class="highlight"><pre>  <span class="no">Jtv</span><span class="o">.</span><span class="n">list</span> <span class="n">category</span><span class="p">:</span> <span class="s1">'gaming'</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="mi">1</span>
+  <span class="c1"># [{'name' =&gt; 'live_user_wingsofdeath'...}]</span>
+</pre></div>
 
-<pre><code>&lt;object type="application/x-shockwave-flash" height="295" width="353" id="jtv_player_flash" data="<a href="http://www.justin.tv/widgets/jtv_player.swf?channel=apidemo&amp;quot">http://www.justin.tv/widgets/jtv_player.swf?channel=apidemo&amp;quot</a>; bgcolor="#000000"&gt;&lt;param name="allowFullScreen" value="true" /&gt;&lt;param name="allowscriptaccess" value="always" /&gt;&lt;param name="movie" value="<a href="http://www.justin.tv/widgets/jtv_player.swf&amp;quot">http://www.justin.tv/widgets/jtv_player.swf&amp;quot</a>; /&gt;&lt;param name="flashvars" value="channel=apidemo&amp;auto_play=false&amp;start_volume=25" /&gt;&lt;/object&gt;
-</code></pre>
+<p>You can include a channel, category, title, language, limit, and offset.</p>
 
-<div class="highlight">
-<pre><span class="n">channel</span><span class="o">.</span><span class="n">title</span>
-<span class="n">channel</span><span class="o">.</span><span class="n">url</span>
-<span class="n">channel</span><span class="o">.</span><span class="n">about</span>
-<span class="n">channel</span><span class="o">.</span><span class="n">description</span>
-</pre>
-</div>
+<h4>Search</h4>
 
+<p>Returns stream information for the live channels that match a search query. The
+results are sorted by the current number of viewers, with the most popular
+channels first.</p>
 
-<h3>JtvClip</h3>
+<div class="highlight"><pre>  <span class="no">Jtv</span><span class="o">.</span><span class="n">search</span> <span class="s1">'gaming'</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="mi">1</span>
+  <span class="c1"># [{'name' =&gt; 'live_user_steven_bonnell_ii'...}]</span>
+</pre></div>
 
-<p>The JtvClip class provides access to specific clip information. To
-create a clip object, simply pass the clip id when you initialize the
-object.</p>
+<p>The first argument is your search query, and you can also pass limit and offset
+as params.</p>
 
-<div class="highlight">
-<pre><span class="n">clip</span> <span class="o">=</span> <span class="no">JtvClip</span><span class="o">.</span><span class="n">new</span><span class="p">(</span> <span class="mi">1278312</span> <span class="p">)</span>
-</pre>
-</div>
+<h3>User</h3>
 
+<h4>Show</h4>
 
-<p>The following method calls are available through the Clip class.</p>
+<p>Returns extended information for a user, specified by user id or login.</p>
 
-<div class="highlight">
-<pre><span class="n">clip</span><span class="o">.</span><span class="n">description</span>
-<span class="n">clip</span><span class="o">.</span><span class="n">title</span>
-<span class="n">clip</span><span class="o">.</span><span class="n">id</span>
-<span class="n">clip</span><span class="o">.</span><span class="n">tags</span>
-<span class="n">clip</span><span class="o">.</span><span class="n">embed</span>
-<span class="n">clip</span><span class="o">.</span><span class="n">image_huge</span>
-<span class="n">clip</span><span class="o">.</span><span class="n">length</span>
-<span class="n">clip</span><span class="o">.</span><span class="n">created_on</span>
-</pre>
-</div>
+<div class="highlight"><pre>  <span class="no">Jtv</span><span class="o">.</span><span class="n">user_show</span> <span class="s1">'mockra'</span>
+  <span class="c1"># {"id"=&gt;22056792...}</span>
+</pre></div>
 
+<p>Pass in a user's login.</p>
+
+<h4>Favorites</h4>
+
+<p>Get all channels who are favorites of a user.</p>
+
+<div class="highlight"><pre>  <span class="no">Jtv</span><span class="o">.</span><span class="n">favorites</span> <span class="s1">'mockra'</span>
+  <span class="c1"># [{}]</span>
+</pre></div>
+
+<p>Pass in a user's login.</p>
+
+<h3>Channel</h3>
+
+<h4>Show</h4>
+
+<p>Returns extended information for a channel, specified by channel id or login.
+Requires OAuth authentication for private channels.</p>
+
+<div class="highlight"><pre>  <span class="no">Jtv</span><span class="o">.</span><span class="n">channel_show</span> <span class="s1">'apidemo'</span>
+  <span class="c1"># {'login'=&gt;'apidemo'...}</span>
+</pre></div>
+
+<p>Pass in a login or id for the channel.</p>
+
+<h4>Fans</h4>
+
+<p>Get users who are fans of a channel. Requires OAuth authentication for private
+channels.</p>
+
+<div class="highlight"><pre>  <span class="no">Jtv</span><span class="o">.</span><span class="n">fans</span> <span class="nb">id</span><span class="p">:</span> <span class="s1">'officecam'</span>
+  <span class="c1"># [{'id'=&gt;23}]</span>
+</pre></div>
+
+<p>Login must be included for the channel. Optional limit and offset params
+(defaults are 20 for limit and 0 for offset). Results returned are limited to
+100. Results are returned in create date order.</p>
+
+<h4>Archives</h4>
+
+<p>Get archives from a given channel. Requires OAuth authentication for private
+channels.</p>
+
+<div class="highlight"><pre>  <span class="no">Jtv</span><span class="o">.</span><span class="n">archives</span> <span class="nb">id</span><span class="p">:</span> <span class="s1">'dotahut'</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="mi">2</span>
+  <span class="c1"># [{'video_codec' =&gt; 'AVC'}, {}]</span>
+</pre></div>
+
+<p>channel id or login must be included as a param. Optional limit and offset
+params (defaults are 20 for limit and 0 for offset). Results returned are
+limited to 100. Results are returned in create date order</p>
+
+<h4>Embed</h4>
+
+<p>Get embed code for a channel.</p>
+
+<div class="highlight"><pre>  <span class="no">Jtv</span><span class="o">.</span><span class="n">embed</span> <span class="s1">'justin'</span><span class="p">,</span> <span class="n">volume</span><span class="p">:</span> <span class="mi">50</span>
+  <span class="c1"># "&lt;object&gt;&lt;/object&gt;"</span>
+</pre></div>
+
+<p>You can supply params volume, publisher_guard (for the default channel password
+to try), height, width, and watermark_position</p>
+
+<h4>Chat Embed</h4>
+
+<p>Get chat embed code for a channel.</p>
+
+<div class="highlight"><pre>  <span class="no">Jtv</span><span class="o">.</span><span class="n">chat_embed</span> <span class="s1">'justin'</span><span class="p">,</span> <span class="n">height</span><span class="p">:</span> <span class="mi">1000</span>
+  <span class="c1"># "&lt;iframe&gt;&lt;/iframe&gt;"</span>
+</pre></div>
+
+<p>You can supply params height and width.</p>
 
 <h2>Contributing</h2>
 
@@ -159,10 +223,11 @@ object.</p>
 <p><a href="http://mockra.com">mockra.com</a></p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/Mockra">Mockra</a></p>
+        <p>This project is maintained by <a href="https://github.com/mockra">mockra</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    <script src="javascripts/scale.fix.js"></script>
+    
   </body>
 </html>

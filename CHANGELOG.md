@@ -13,3 +13,6 @@
 
 # v1.0.0.beta1
 * Added access to User API
+
+# v1.0.0
+* Channel access has been added

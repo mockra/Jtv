@@ -2,9 +2,7 @@ require 'spec_helper'
 require 'vcr_config'
 
 describe Jtv::Channel do
-  describe '#fans' do
-    use_vcr_cassette
-
+  describe '#fans', :vcr do
     it 'fetches fans for a given channel' do
       fans = Jtv.fans id: 'officecam'
       expect(fans).to be_an Array
@@ -13,9 +11,7 @@ describe Jtv::Channel do
     end
   end
 
-  describe '#archives' do
-    use_vcr_cassette
-
+  describe '#archives', :vcr do
     it 'returns an array of archives for given channel' do
       archives = Jtv.archives id: 'dotahut', limit: 2
       expect(archives).to be_an Array
@@ -24,18 +20,14 @@ describe Jtv::Channel do
     end
   end
 
-  describe '#channel_show' do
-    use_vcr_cassette
-
+  describe '#channel_show', :vcr do
     it 'provides information for a given channel' do
       channel = Jtv.channel_show 'apidemo'
       expect(channel['login']).to eq 'apidemo'
     end
   end
 
-  describe '#embed' do
-    use_vcr_cassette
-
+  describe '#embed', :vcr do
     it 'returns a string containing an embed object' do
       embed = Jtv.embed 'justin', volume: 50
       expect(embed).to be_a String
@@ -45,9 +37,7 @@ describe Jtv::Channel do
     end
   end
 
-  describe '#chat_embed' do
-    use_vcr_cassette
-
+  describe '#chat_embed', :vcr do
     it 'returns an iframe for chat' do
       chat = Jtv.chat_embed 'justin', height: 50
       expect(chat).to be_a String

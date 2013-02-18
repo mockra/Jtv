@@ -2,18 +2,14 @@ require 'spec_helper'
 require 'vcr_config'
 
 describe Jtv::Stream do
-  describe '#summary' do
-    use_vcr_cassette
-
+  describe '#summary', :vcr do
     it 'returns a summary of Jutstin.tv data' do
       summary = Jtv.summary
       expect(summary['streams_count']).to be > 0
     end
   end
 
-  describe '#list' do
-    use_vcr_cassette
-
+  describe '#list', :vcr do
     it 'returns a list of streams for a category' do
       list = Jtv.list category: 'gaming'
       expect(list.count).to eq 50
@@ -21,9 +17,7 @@ describe Jtv::Stream do
     end
   end
 
-  describe '#search' do
-    use_vcr_cassette
-
+  describe '#search', :vcr do
     it 'returns streams based on search query' do
       search = Jtv.search 'league of legends', limit: 10
       expect(search.count).to eq 10

@@ -7,60 +7,58 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      accept:
+      Accept:
       - application/json
-      user-agent:
+      User-Agent:
       - Jtv Gem
-      authorization:
-      - OAuth oauth_nonce="f453dc416d3ce366ebffc6316602f6f8", oauth_signature="M7IjyBIhCCag1AHMFGaVCrs3h5I%3D",
-        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1361144289", oauth_version="1.0"
-      accept-encoding:
+      Authorization:
+      - OAuth oauth_nonce="010ea1248ba10a18edc4a91460291e2d", oauth_signature="V%2B7Oxsw%2BcS%2FZMxu1%2BU%2BQplSZBWI%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1361148594", oauth_version="1.0"
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
       message: OK
     headers:
-      server:
+      Server:
       - nginx
-      date:
-      - Sun, 17 Feb 2013 23:38:09 GMT
-      content-type:
+      Date:
+      - Mon, 18 Feb 2013 00:49:54 GMT
+      Content-Type:
       - application/json
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      connection:
+      Connection:
       - close
-      status:
+      Status:
       - 200 OK
-      via:
-      - Twice 0.2 twice7:3344
-      x-runtime:
-      - '0.035267'
-      x-geo:
+      Via:
+      - Twice 0.2 twice3:3344
+      X-Runtime:
+      - '0.024643'
+      X-Geo:
       - US
-      x-request-id:
-      - e6b726e59e4d95c5d250b185b23e76c7
-      etag:
+      X-Request-Id:
+      - e0128d6c2a3fe994f53e6dd12ba979a4
+      Etag:
       - '"396a7501345f837c6c6477ba1a601d74"'
-      x-ua-compatible:
+      X-Ua-Compatible:
       - IE=Edge,chrome=1
-      cache-control:
+      Cache-Control:
       - must-revalidate, private, max-age=0
-      x-rack-cache:
+      X-Rack-Cache:
       - miss
-      set-cookie:
-      - language=en; domain=.twitch.tv; path=/; expires=Thu, 17-Feb-2033 23:38:09
+      Set-Cookie:
+      - language=en; domain=.twitch.tv; path=/; expires=Fri, 18-Feb-2033 00:49:54
         GMT
-      front-end-https:
+      Front-End-Https:
       - 'off'
-      content-encoding:
-      - gzip
     body:
       encoding: UTF-8
       string: '[{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_fourplayerpodcast-630x473.jpg","timezone":"US/Central","tags":"360
         games gaming microsoft nintendo playstation podcast ps3 sony video videogames
-        wii xbox","category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"43007837","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_fourplayerpodcast-320x240.jpg","status":"Metal
+        wii xbox","category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"43008310","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_fourplayerpodcast-320x240.jpg","status":"Metal
         Gear Sunday - MGS4 with Nolan!","embed_enabled":true,"image_url_huge":"http://static-cdn.jtvnw.net/jtv_user_pictures/fourplayerpodcast-profile_image-a5772f943f3cc055-600x600.jpeg","channel_url":"http://www.justin.tv/fourplayerpodcast","subcategory_title":null,"title":"4Player
         Podcast","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_fourplayerpodcast-70x53.jpg","mature":false,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_fourplayerpodcast-150x113.jpg","image_url_large":"http://static-cdn.jtvnw.net/jtv_user_pictures/fourplayerpodcast-profile_image-a5772f943f3cc055-300x300.jpeg","id":261715,"image_url_medium":"http://static-cdn.jtvnw.net/jtv_user_pictures/fourplayerpodcast-profile_image-a5772f943f3cc055-150x150.jpeg","producer":true,"image_url_small":"http://static-cdn.jtvnw.net/jtv_user_pictures/fourplayerpodcast-profile_image-a5772f943f3cc055-70x70.jpeg","embed_code":"    <object
         type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
@@ -69,7 +67,7 @@ http_interactions:
         name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
         /><param name=\"flashvars\" value=\"auto_play=false&channel=fourplayerpodcast&start_volume=25\"
         /></object>\n","image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/fourplayerpodcast-profile_image-a5772f943f3cc055-50x50.jpeg","language":"en","login":"fourplayerpodcast"},{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_brandon505-630x473.jpg","timezone":"America/Detroit","tags":"brandon505
-        brandons channel gaming","category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"3230947","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_brandon505-320x240.jpg","status":"Borderlands
+        brandons channel gaming","category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"3230997","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_brandon505-320x240.jpg","status":"Borderlands
         2 with Brandon (360)","embed_enabled":true,"image_url_huge":"http://static-cdn.jtvnw.net/jtv_user_pictures/brandon505-profile_image-fc6c1cfd10c850be-600x600.png","channel_url":"http://www.justin.tv/brandon505","subcategory_title":null,"title":"Brandon''s
         Gaming Stream","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_brandon505-70x53.jpg","mature":null,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_brandon505-150x113.jpg","image_url_large":"http://static-cdn.jtvnw.net/jtv_user_pictures/brandon505-profile_image-fc6c1cfd10c850be-300x300.png","id":6659152,"image_url_medium":"http://static-cdn.jtvnw.net/jtv_user_pictures/brandon505-profile_image-fc6c1cfd10c850be-150x150.png","producer":true,"image_url_small":"http://static-cdn.jtvnw.net/jtv_user_pictures/brandon505-profile_image-fc6c1cfd10c850be-70x70.png","embed_code":"    <object
         type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
@@ -77,7 +75,7 @@ http_interactions:
         bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
         name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
         /><param name=\"flashvars\" value=\"auto_play=false&channel=brandon505&start_volume=25\"
-        /></object>\n","image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/brandon505-profile_image-fc6c1cfd10c850be-50x50.png","language":"en","login":"brandon505"},{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_nlthargor-630x473.jpg","timezone":"Europe/Berlin","tags":null,"category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"17579","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_nlthargor-320x240.jpg","status":"2,6k+
+        /></object>\n","image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/brandon505-profile_image-fc6c1cfd10c850be-50x50.png","language":"en","login":"brandon505"},{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_nlthargor-630x473.jpg","timezone":"Europe/Berlin","tags":null,"category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"17581","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_nlthargor-320x240.jpg","status":"2,6k+
         Exp Warrior // 3vs3 with Spowngirly and Atyrian!! Pushing Glad!","embed_enabled":true,"image_url_huge":"http://static-cdn.jtvnw.net/jtv_user_pictures/nlthargor-profile_image-d8478fa647ded651-600x600.jpeg","channel_url":"http://www.justin.tv/nlthargor","subcategory_title":null,"title":"nlthargor","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_nlthargor-70x53.jpg","mature":false,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_nlthargor-150x113.jpg","image_url_large":"http://static-cdn.jtvnw.net/jtv_user_pictures/nlthargor-profile_image-d8478fa647ded651-300x300.jpeg","id":30744941,"image_url_medium":"http://static-cdn.jtvnw.net/jtv_user_pictures/nlthargor-profile_image-d8478fa647ded651-150x150.jpeg","producer":false,"image_url_small":"http://static-cdn.jtvnw.net/jtv_user_pictures/nlthargor-profile_image-d8478fa647ded651-70x70.jpeg","embed_code":"    <object
         type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
         data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=nlthargor\"
@@ -85,6 +83,6 @@ http_interactions:
         name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
         /><param name=\"flashvars\" value=\"auto_play=false&channel=nlthargor&start_volume=25\"
         /></object>\n","image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/nlthargor-profile_image-d8478fa647ded651-50x50.jpeg","language":"de","login":"nlthargor"}]'
-    http_version: '1.1'
-  recorded_at: Sun, 17 Feb 2013 23:38:09 GMT
+    http_version: 
+  recorded_at: Mon, 18 Feb 2013 00:49:54 GMT
 recorded_with: VCR 2.4.0

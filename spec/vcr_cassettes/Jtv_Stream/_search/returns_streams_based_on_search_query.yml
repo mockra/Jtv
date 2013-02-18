@@ -1,0 +1,161 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.justin.tv/stream/search/league%20of%20legends.json?limit=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Jtv Gem
+      Authorization:
+      - OAuth oauth_nonce="86e5ab31eda02e21806a6c03fe47730f", oauth_signature="1iGZeCbbWKogBy%2BmIUcnASMexh0%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1361148617", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 18 Feb 2013 00:50:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Via:
+      - Twice 0.2 twice7:3341
+      X-Runtime:
+      - '0.646477'
+      X-Geo:
+      - US
+      X-Request-Id:
+      - a7a8a55b96a787e8aba8197c225fc76d
+      Etag:
+      - '"3e24bb63eebf6b2bc481fc9ff69f4639"'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      X-Rack-Cache:
+      - miss
+      Front-End-Https:
+      - 'off'
+    body:
+      encoding: UTF-8
+      string: '[{"stream_count":5120,"name":"live_user_esl_lol_brasil","embed_count":120,"format":"live","channel_count":8568,"category":"gaming","title":"Go4LOL
+        #16 -  Na transmiss\u00e3o @GruntarTV e @TobocoTV- Tabela: http://bit.ly/UuWP2I","channel":{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_esl_lol_brasil-630x473.jpg","timezone":"America/Sao_Paulo","tags":null,"category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"6959503","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_esl_lol_brasil-320x240.jpg","status":"Go4LOL
+        #16 -  Na transmiss\u00e3o @GruntarTV e @TobocoTV- Tabela: http://bit.ly/UuWP2I","embed_enabled":true,"image_url_huge":"http://static-cdn.jtvnw.net/jtv_user_pictures/esl_lol_brasil-profile_image-b4f5ee3a40c1736a-600x600.png","channel_url":"http://www.justin.tv/esl_lol_brasil","subcategory_title":null,"title":"esl_lol_brasil","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_esl_lol_brasil-70x53.jpg","mature":null,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_esl_lol_brasil-150x113.jpg","image_url_large":"http://static-cdn.jtvnw.net/jtv_user_pictures/esl_lol_brasil-profile_image-b4f5ee3a40c1736a-300x300.png","id":36791492,"image_url_medium":"http://static-cdn.jtvnw.net/jtv_user_pictures/esl_lol_brasil-profile_image-b4f5ee3a40c1736a-150x150.png","producer":true,"image_url_small":"http://static-cdn.jtvnw.net/jtv_user_pictures/esl_lol_brasil-profile_image-b4f5ee3a40c1736a-70x70.png","embed_code":"    <object
+        type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
+        data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=esl_lol_brasil\"
+        bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
+        name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
+        /><param name=\"flashvars\" value=\"auto_play=false&channel=esl_lol_brasil&start_volume=25\"
+        /></object>\n","image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/esl_lol_brasil-profile_image-b4f5ee3a40c1736a-50x50.png","language":"de","login":"esl_lol_brasil"},"abuse_reported":false,"site_count":5000,"featured":true,"video_bitrate":114.6484375,"language":"de","video_height":720,"broadcaster":"fme","meta_game":"League
+        of Legends","id":"4889347680","channel_view_count":6869262,"geo":"BR","video_width":1280,"up_time":"Sun
+        Feb 17 08:31:44 2013","audio_codec":"uncompressed","broadcast_part":17,"stream_type":"live","embed_enabled":true,"channel_subscription":false,"video_codec":"AVC"},{"stream_count":2377,"name":"live_user_sivhd","embed_count":229,"format":"live","channel_count":6258,"category":"gaming","title":"Siv","channel":{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_sivhd-630x473.jpg","timezone":"America/Los_Angeles","tags":null,"category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"3192999","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_sivhd-320x240.jpg","status":"Siv","embed_enabled":true,"image_url_huge":"http://static-cdn.jtvnw.net/jtv_user_pictures/sivhd-profile_image-ef8bcc4387da7a57-600x600.jpeg","channel_url":"http://www.justin.tv/sivhd","subcategory_title":null,"title":"sivhd","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_sivhd-70x53.jpg","mature":null,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_sivhd-150x113.jpg","image_url_large":"http://static-cdn.jtvnw.net/jtv_user_pictures/sivhd-profile_image-ef8bcc4387da7a57-300x300.jpeg","id":27686136,"image_url_medium":"http://static-cdn.jtvnw.net/jtv_user_pictures/sivhd-profile_image-ef8bcc4387da7a57-150x150.jpeg","producer":true,"image_url_small":"http://static-cdn.jtvnw.net/jtv_user_pictures/sivhd-profile_image-ef8bcc4387da7a57-70x70.jpeg","embed_code":"    <object
+        type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
+        data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=sivhd\"
+        bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
+        name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
+        /><param name=\"flashvars\" value=\"auto_play=false&channel=sivhd&start_volume=25\"
+        /></object>\n","image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/sivhd-profile_image-ef8bcc4387da7a57-50x50.jpeg","language":"en","login":"sivhd"},"abuse_reported":false,"site_count":2148,"featured":true,"video_bitrate":536.6796875,"language":"en","video_height":720,"broadcaster":"fme","meta_game":"League
+        of Legends","id":"4890918384","channel_view_count":3068590,"geo":"NL","video_width":1280,"up_time":"Sun
+        Feb 17 11:55:23 2013","audio_codec":"uncompressed","broadcast_part":10,"stream_type":"live","embed_enabled":false,"channel_subscription":false,"video_codec":"AVC"},{"stream_count":1712,"name":"live_user_nyjacky","embed_count":264,"format":"live","channel_count":3933,"category":"gaming","title":"Nyjacky
+        - Duo with Shitvicious..<3","channel":{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_nyjacky-630x473.jpg","timezone":"America/Los_Angeles","tags":null,"category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"5040347","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_nyjacky-320x240.jpg","status":"Nyjacky
+        - Duo with Shitvicious..<3","embed_enabled":true,"image_url_huge":"http://static-cdn.jtvnw.net/jtv_user_pictures/nyjacky-profile_image-cac71751569030b8-600x600.jpeg","channel_url":"http://www.justin.tv/nyjacky","subcategory_title":null,"title":"Crs
+        Nyjacky","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_nyjacky-70x53.jpg","mature":false,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_nyjacky-150x113.jpg","image_url_large":"http://static-cdn.jtvnw.net/jtv_user_pictures/nyjacky-profile_image-cac71751569030b8-300x300.jpeg","id":25077819,"image_url_medium":"http://static-cdn.jtvnw.net/jtv_user_pictures/nyjacky-profile_image-cac71751569030b8-150x150.jpeg","producer":true,"image_url_small":"http://static-cdn.jtvnw.net/jtv_user_pictures/nyjacky-profile_image-cac71751569030b8-70x70.jpeg","embed_code":"    <object
+        type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
+        data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=nyjacky\"
+        bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
+        name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
+        /><param name=\"flashvars\" value=\"auto_play=false&channel=nyjacky&start_volume=25\"
+        /></object>\n","image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/nyjacky-profile_image-cac71751569030b8-50x50.jpeg","language":"en","login":"nyjacky"},"abuse_reported":false,"site_count":1448,"featured":true,"video_bitrate":2072.765625,"language":"en","video_height":1080,"broadcaster":"delay","meta_game":"League
+        of Legends","id":"4891515904","channel_view_count":5015209,"geo":"US","video_width":1920,"up_time":"Sun
+        Feb 17 13:13:19 2013","audio_codec":"uncompressed","broadcast_part":8,"stream_type":"live","embed_enabled":true,"channel_subscription":false,"video_codec":"AVC"},{"stream_count":581,"name":"live_user_bischulol","embed_count":109,"format":"live","channel_count":797,"category":"gaming","title":"Bischu/\ube44\uc288
+        CHALLENGER BISCHU. Duoin with Wings","channel":{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_bischulol-630x473.jpg","timezone":"America/Los_Angeles","tags":null,"category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"2771153","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_bischulol-320x240.jpg","status":"Bischu/\ube44\uc288
+        CHALLENGER BISCHU. Duoin with Wings","embed_enabled":true,"image_url_huge":"http://static-cdn.jtvnw.net/jtv_user_pictures/bischulol-profile_image-59df0b89d975ccf5-600x600.jpeg","channel_url":"http://www.justin.tv/bischulol","subcategory_title":null,"title":"bischulol","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_bischulol-70x53.jpg","mature":null,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_bischulol-150x113.jpg","image_url_large":"http://static-cdn.jtvnw.net/jtv_user_pictures/bischulol-profile_image-59df0b89d975ccf5-300x300.jpeg","id":35671232,"image_url_medium":"http://static-cdn.jtvnw.net/jtv_user_pictures/bischulol-profile_image-59df0b89d975ccf5-150x150.jpeg","producer":true,"image_url_small":"http://static-cdn.jtvnw.net/jtv_user_pictures/bischulol-profile_image-59df0b89d975ccf5-70x70.jpeg","embed_code":"    <object
+        type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
+        data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=bischulol\"
+        bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
+        name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
+        /><param name=\"flashvars\" value=\"auto_play=false&channel=bischulol&start_volume=25\"
+        /></object>\n","image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/bischulol-profile_image-59df0b89d975ccf5-50x50.jpeg","language":"en","login":"bischulol"},"abuse_reported":false,"site_count":472,"featured":true,"video_bitrate":579.875,"language":"en","video_height":720,"broadcaster":"unknown_rtmp","meta_game":"League
+        of Legends","id":"4892094880","channel_view_count":2761367,"geo":"CA","video_width":1280,"up_time":"Sun
+        Feb 17 14:33:16 2013","audio_codec":"uncompressed","broadcast_part":5,"stream_type":"live","embed_enabled":false,"channel_subscription":false,"video_codec":"AVC"},{"stream_count":183,"name":"live_user_robertxlee","embed_count":44,"format":"live","channel_count":440,"category":"gaming","subcategory":"strategy","title":"ROBERTxLEE
+        2512 ADC- SOLOQQ","channel":{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_robertxlee-630x473.jpg","timezone":"US/Pacific","tags":null,"category_title":"Gaming","subcategory":"strategy","category":"gaming","views_count":"4886134","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_robertxlee-320x240.jpg","status":"ROBERTxLEE
+        2512 ADC- SOLOQQ","embed_enabled":true,"image_url_huge":"http://static-cdn.jtvnw.net/jtv_user_pictures/robertxlee-profile_image-c363be2c796ad6ce-600x600.png","channel_url":"http://www.justin.tv/robertxlee","subcategory_title":"Strategy","title":"ROBERTxLEE","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_robertxlee-70x53.jpg","mature":false,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_robertxlee-150x113.jpg","image_url_large":"http://static-cdn.jtvnw.net/jtv_user_pictures/robertxlee-profile_image-c363be2c796ad6ce-300x300.png","id":21013799,"image_url_medium":"http://static-cdn.jtvnw.net/jtv_user_pictures/robertxlee-profile_image-c363be2c796ad6ce-150x150.png","producer":true,"image_url_small":"http://static-cdn.jtvnw.net/jtv_user_pictures/robertxlee-profile_image-c363be2c796ad6ce-70x70.png","embed_code":"    <object
+        type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
+        data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=robertxlee\"
+        bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
+        name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
+        /><param name=\"flashvars\" value=\"auto_play=false&channel=robertxlee&start_volume=25\"
+        /></object>\n","image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/robertxlee-profile_image-c363be2c796ad6ce-50x50.png","language":"en","login":"robertxlee"},"abuse_reported":false,"site_count":139,"featured":true,"video_bitrate":2243.625,"language":"en","video_height":900,"broadcaster":"unknown_rtmp","meta_game":"League
+        of Legends","id":"4891424704","channel_view_count":4883050,"geo":"US","video_width":1600,"up_time":"Sun
+        Feb 17 13:01:41 2013","audio_codec":"uncompressed","broadcast_part":8,"stream_type":"live","embed_enabled":true,"channel_subscription":true,"video_codec":"AVC"},{"stream_count":218,"name":"live_user_hungwow","embed_count":78,"format":"live","channel_count":251,"category":"gaming","title":"Hkcs_kane
+        Tw/Kr Server(\u53f0\u670d/\u97d3\u670d)\u5361\u4e43\u53f0(\u0301\u25d5\u25de\u0c6a\u25df\u25d5\u2035)PACL
+        MVP","channel":{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_hungwow-630x473.jpg","timezone":"Asia/Hong_Kong","tags":null,"category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"709520","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_hungwow-320x240.jpg","status":"Hkcs_kane
+        Tw/Kr Server(\u53f0\u670d/\u97d3\u670d)\u5361\u4e43\u53f0(\u0301\u25d5\u25de\u0c6a\u25df\u25d5\u2035)PACL
+        MVP","embed_enabled":true,"image_url_huge":"http://static-cdn.jtvnw.net/jtv_user_pictures/hungwow-profile_image-a7598d5f9e19f73e-600x600.jpeg","channel_url":"http://www.justin.tv/hungwow","subcategory_title":null,"title":"kanebb''s
+        stream","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_hungwow-70x53.jpg","mature":null,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_hungwow-150x113.jpg","image_url_large":"http://static-cdn.jtvnw.net/jtv_user_pictures/hungwow-profile_image-a7598d5f9e19f73e-300x300.jpeg","id":28168965,"image_url_medium":"http://static-cdn.jtvnw.net/jtv_user_pictures/hungwow-profile_image-a7598d5f9e19f73e-150x150.jpeg","producer":true,"image_url_small":"http://static-cdn.jtvnw.net/jtv_user_pictures/hungwow-profile_image-a7598d5f9e19f73e-70x70.jpeg","embed_code":"    <object
+        type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
+        data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=hungwow\"
+        bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
+        name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
+        /><param name=\"flashvars\" value=\"auto_play=false&channel=hungwow&start_volume=25\"
+        /></object>\n","image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/hungwow-profile_image-a7598d5f9e19f73e-50x50.jpeg","language":"zh-TW","login":"hungwow"},"abuse_reported":false,"site_count":140,"featured":true,"video_bitrate":122.9921875,"language":"zh-TW","video_height":900,"broadcaster":"unknown_rtmp","meta_game":"League
+        of Legends","id":"4892666720","channel_view_count":708743,"geo":"HK","video_width":1440,"up_time":"Sun
+        Feb 17 15:54:55 2013","audio_codec":"uncompressed","broadcast_part":2,"stream_type":"live","embed_enabled":true,"channel_subscription":false,"video_codec":"AVC"},{"stream_count":2,"name":"live_user_1pacov1","embed_count":0,"format":"live","channel_count":2,"category":"gaming","subcategory":"playstation","title":"League
+        of Legends","channel":{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_1pacov1-630x473.jpg","timezone":"America/New_York","tags":null,"category_title":"Gaming","subcategory":"playstation","category":"gaming","views_count":"3749","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_1pacov1-320x240.jpg","status":"League
+        of Legends","embed_enabled":true,"image_url_huge":"http://static-cdn.jtvnw.net/jtv_user_pictures/1pacov1-profile_image-27553cbf333e7c6d-600x600.jpeg","channel_url":"http://www.justin.tv/1pacov1","subcategory_title":"Playstation","title":"1pacov1","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_1pacov1-70x53.jpg","mature":null,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_1pacov1-150x113.jpg","image_url_large":"http://static-cdn.jtvnw.net/jtv_user_pictures/1pacov1-profile_image-27553cbf333e7c6d-300x300.jpeg","id":36885577,"image_url_medium":"http://static-cdn.jtvnw.net/jtv_user_pictures/1pacov1-profile_image-27553cbf333e7c6d-150x150.jpeg","producer":false,"image_url_small":"http://static-cdn.jtvnw.net/jtv_user_pictures/1pacov1-profile_image-27553cbf333e7c6d-70x70.jpeg","embed_code":"    <object
+        type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
+        data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=1pacov1\"
+        bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
+        name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
+        /><param name=\"flashvars\" value=\"auto_play=false&channel=1pacov1&start_volume=25\"
+        /></object>\n","image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/1pacov1-profile_image-27553cbf333e7c6d-50x50.jpeg","language":"en","login":"1pacov1"},"abuse_reported":false,"site_count":2,"featured":false,"video_bitrate":2203.8984375,"language":"en","video_height":1200,"broadcaster":"unknown_rtmp","meta_game":"League
+        of Legends","id":"4892530608","channel_view_count":3749,"geo":"US","video_width":1920,"up_time":"Sun
+        Feb 17 15:35:18 2013","audio_codec":"uncompressed","broadcast_part":3,"stream_type":"live","embed_enabled":false,"channel_subscription":false,"video_codec":"AVC"},{"stream_count":1,"name":"live_user_sakezz","embed_count":0,"format":"live","channel_count":1,"category":"gaming","title":"SaKezZ
+        - League of Legends","channel":{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_sakezz-630x473.jpg","timezone":"America/Los_Angeles","tags":null,"category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"1288","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_sakezz-320x240.jpg","status":"SaKezZ
+        - League of Legends","embed_enabled":true,"image_url_huge":"http://static-cdn.jtvnw.net/jtv_user_pictures/sakezz-profile_image-171738ff9825d95a-600x600.jpeg","channel_url":"http://www.justin.tv/sakezz","subcategory_title":null,"title":"sakezz","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_sakezz-70x53.jpg","mature":false,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_sakezz-150x113.jpg","image_url_large":"http://static-cdn.jtvnw.net/jtv_user_pictures/sakezz-profile_image-171738ff9825d95a-300x300.jpeg","id":22479648,"image_url_medium":"http://static-cdn.jtvnw.net/jtv_user_pictures/sakezz-profile_image-171738ff9825d95a-150x150.jpeg","producer":false,"image_url_small":"http://static-cdn.jtvnw.net/jtv_user_pictures/sakezz-profile_image-171738ff9825d95a-70x70.jpeg","embed_code":"    <object
+        type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
+        data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=sakezz\"
+        bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
+        name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
+        /><param name=\"flashvars\" value=\"auto_play=false&channel=sakezz&start_volume=25\"
+        /></object>\n","image_url_tiny":"http://static-cdn.jtvnw.net/jtv_user_pictures/sakezz-profile_image-171738ff9825d95a-50x50.jpeg","language":"en","login":"sakezz"},"abuse_reported":false,"site_count":1,"featured":false,"video_bitrate":2982.7734375,"language":"en","video_height":1080,"broadcaster":"fme","meta_game":"League
+        of Legends","id":"4890546032","channel_view_count":1288,"geo":"SE","video_width":1920,"up_time":"Sun
+        Feb 17 11:06:44 2013","audio_codec":"aac","broadcast_part":12,"stream_type":"live","embed_enabled":true,"channel_subscription":false,"video_codec":"AVC"},{"stream_count":0,"name":"live_user_weneedarockman","embed_count":0,"format":"live","channel_count":0,"category":"gaming","title":"League
+        of Legends","channel":{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_weneedarockman-630x473.jpg","timezone":"America/Los_Angeles","tags":null,"category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"717","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_weneedarockman-320x240.jpg","status":"League
+        of Legends","embed_enabled":true,"image_url_huge":"http://www-cdn.jtvnw.net/images/xarth/404_user_600x600.png","channel_url":"http://www.justin.tv/weneedarockman","subcategory_title":null,"title":"weneedarockman","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_weneedarockman-70x53.jpg","mature":null,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_weneedarockman-150x113.jpg","image_url_large":"http://www-cdn.jtvnw.net/images/xarth/404_user_300x300.png","id":35825143,"image_url_medium":"http://www-cdn.jtvnw.net/images/xarth/404_user_150x150.png","producer":false,"image_url_small":"http://www-cdn.jtvnw.net/images/xarth/404_user_70x70.png","embed_code":"    <object
+        type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
+        data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=weneedarockman\"
+        bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
+        name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
+        /><param name=\"flashvars\" value=\"auto_play=false&channel=weneedarockman&start_volume=25\"
+        /></object>\n","image_url_tiny":"http://www-cdn.jtvnw.net/images/xarth/404_user_50x50.png","language":"en","login":"weneedarockman"},"abuse_reported":false,"site_count":0,"featured":false,"video_bitrate":240.0546875,"language":"en","video_height":540,"broadcaster":"fme","meta_game":"League
+        of Legends","id":"4892988912","channel_view_count":717,"geo":"US","video_width":960,"up_time":"Sun
+        Feb 17 16:41:58 2013","audio_codec":"uncompressed","broadcast_part":1,"stream_type":"live","embed_enabled":false,"channel_subscription":false,"video_codec":"AVC"},{"stream_count":0,"name":"live_user_emby666","embed_count":0,"format":"live","channel_count":0,"category":"gaming","title":"League
+        Of Legends","channel":{"screen_cap_url_huge":"http://static-cdn.jtvnw.net/previews/live_user_emby666-630x473.jpg","timezone":"Europe/Amsterdam","tags":null,"category_title":"Gaming","subcategory":null,"category":"gaming","views_count":"12","screen_cap_url_large":"http://static-cdn.jtvnw.net/previews/live_user_emby666-320x240.jpg","status":"League
+        Of Legends","embed_enabled":true,"image_url_huge":"http://www-cdn.jtvnw.net/images/xarth/404_user_600x600.png","channel_url":"http://www.justin.tv/emby666","subcategory_title":null,"title":"emby666","screen_cap_url_small":"http://static-cdn.jtvnw.net/previews/live_user_emby666-70x53.jpg","mature":null,"screen_cap_url_medium":"http://static-cdn.jtvnw.net/previews/live_user_emby666-150x113.jpg","image_url_large":"http://www-cdn.jtvnw.net/images/xarth/404_user_300x300.png","id":32583435,"image_url_medium":"http://www-cdn.jtvnw.net/images/xarth/404_user_150x150.png","producer":false,"image_url_small":"http://www-cdn.jtvnw.net/images/xarth/404_user_70x70.png","embed_code":"    <object
+        type=\"application/x-shockwave-flash\" height=\"295\" width=\"353\" id=\"live_embed_player_flash\"
+        data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=emby666\"
+        bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param
+        name=\"allowscriptaccess\" value=\"always\" /><param name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
+        /><param name=\"flashvars\" value=\"auto_play=false&channel=emby666&start_volume=25\"
+        /></object>\n","image_url_tiny":"http://www-cdn.jtvnw.net/images/xarth/404_user_50x50.png","language":"en","login":"emby666"},"abuse_reported":false,"site_count":0,"featured":false,"video_bitrate":504.6484375,"language":"en","video_height":720,"broadcaster":"fme","meta_game":"League
+        of Legends","id":"4892526848","channel_view_count":12,"geo":"BE","video_width":1280,"up_time":"Sun
+        Feb 17 15:34:43 2013","audio_codec":"???","broadcast_part":3,"stream_type":"live","embed_enabled":false,"channel_subscription":false,"video_codec":"AVC"}]'
+    http_version: 
+  recorded_at: Mon, 18 Feb 2013 00:50:18 GMT
+recorded_with: VCR 2.4.0

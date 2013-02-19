@@ -1,4 +1,4 @@
-# Jtv
+# Jtv [![Code Climate](https://codeclimate.com/github/mockra/Jtv.png)](https://codeclimate.com/github/mockra/Jtv)
 
 This library provides a complete wrapper for the Justin.TV and Twitch.TV APIs.
 

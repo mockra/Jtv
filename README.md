@@ -19,7 +19,7 @@ Or install it yourself as:
 ## Justin.TV API Keys
 
 If you want access to higher rate limits for your application, then you
-need to sign up for a [Justin.TV developer account](http://www.justin.tv/developer/activate).
+need to sign up for a [Justin.TV developer account](http://www.twitch.tv/login?auto=true&redirect_on_login=%2Fdeveloper%2Factivate).
 
 Once you have your API Keys, you can set them up using the configuration guide
 below.

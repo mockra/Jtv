@@ -3,11 +3,11 @@ require 'uri'
 module Jtv
   module Stream
     def summary params = {}
-      get 'stream/summary', params
+      get 'stream/summary.json', params
     end
 
     def list params = {}
-      get 'stream/list', params
+      get 'stream/list.json', params
     end
 
     def search query, params = {}

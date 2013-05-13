@@ -21,7 +21,7 @@ describe Jtv::Stream do
     it 'returns streams based on search query' do
       search = Jtv.search 'league of legends', limit: 10
       expect(search.count).to eq 10
-      expect(search.first['category']).to eq 'gaming'
+      expect(search.first['category']).to eq 'entertainment'
     end
   end
 end

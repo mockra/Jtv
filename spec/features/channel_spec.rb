@@ -12,8 +12,8 @@ describe Jtv::Channel do
   end
 
   describe '#archives', :vcr do
-    it 'returns an array of archives for given channel' do
-      archives = Jtv.archives id: 'dotahut', limit: 2
+   it 'returns an array of archives for given channel' do
+      archives = Jtv.archives channel: 'dotahut', limit: 2
       expect(archives).to be_an Array
       expect(archives.count).to eq 2
       expect(archives.first['video_codec']).to eq 'AVC'
@@ -41,7 +41,7 @@ describe Jtv::Channel do
     it 'returns an iframe for chat' do
       chat = Jtv.chat_embed 'justin', height: 50
       expect(chat).to be_a String
-      expect(chat).to include 'height:50px'
+      expect(chat).to include '50'
       expect(chat).to include 'iframe'
     end
   end

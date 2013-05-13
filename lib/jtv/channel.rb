@@ -5,11 +5,13 @@ module Jtv
     end
 
     def fans params = {}
-      get 'channel/fans', params
+      id = params[:id] || params[:channel]
+      get "channel/fans/#{id}.json", params
     end
 
     def archives params = {}
-      get 'channel/archives', params
+      id = params[:id] || params[:channel]
+      get "channel/archives/#{id}.json", params
     end
 
     def embed id, params = {}

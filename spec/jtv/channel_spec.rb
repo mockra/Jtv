@@ -14,15 +14,17 @@ describe Jtv::Channel do
 
   describe '#fans' do
     it 'sends fans and params to get' do
-      client.should_receive(:get).with 'channel/fans', { channel: 'test' }
+      client.should_receive(:get).with 'channel/fans/test.json',
+        { channel: 'test' }
       client.fans channel: 'test'
     end
   end
 
   describe '#archives' do
     it 'sends archives and params to get' do
-      client.should_receive(:get).with 'channel/archives', { channel: 'test' }
-      client.archives channel: 'test'
+      client.should_receive(:get).with 'channel/archives/test.json',
+        { id: 'test' }
+      client.archives id: 'test'
     end
   end
 

@@ -16,3 +16,6 @@
 
 # v1.0.0
 * Channel access has been added
+
+# v1.0.1
+* Fixes stream and channel API

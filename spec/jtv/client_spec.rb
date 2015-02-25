@@ -6,7 +6,7 @@ describe Jtv::Client do
 
   describe '#get' do
     it 'fetches JSON based on method, path, and params' do
-      client.should_receive(:get_json).with(:get, '/test/', {})
+      expect(client).to receive(:get_json).with(:get, '/test/', {})
       client.get '/test/'
     end
   end
@@ -20,7 +20,7 @@ describe Jtv::Client do
   context 'when including stream' do
     it 'has access to summary, list, and search' do
       expect(client).to respond_to :summary
-      expect(client).to respond_to :list
+      expect(client).to respond_to :featured
       expect(client).to respond_to :search
     end
   end
@@ -28,7 +28,6 @@ describe Jtv::Client do
   context 'when including user' do
     it 'has access to show and favorites' do
       expect(client).to respond_to :user_show
-      expect(client).to respond_to :favorites
     end
   end
 
@@ -37,8 +36,6 @@ describe Jtv::Client do
       expect(client).to respond_to :channel_show
       expect(client).to respond_to :fans
       expect(client).to respond_to :archives
-      expect(client).to respond_to :embed
-      expect(client).to respond_to :chat_embed
     end
   end
 end

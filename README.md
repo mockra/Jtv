@@ -68,17 +68,15 @@ category).
 
 You can include a channel, language, or category in your search params.
 
-#### List
+#### Featured
 
 Returns stream information for all live channels. The results are sorted by the
 current number of viewers, with the most popular channels first.
 
 ```ruby
-  Jtv.list category: 'gaming', limit: 1
+  Jtv.featured
   # [{'name' => 'live_user_wingsofdeath'...}]
 ```
-
-You can include a channel, category, title, language, limit, and offset.
 
 #### Search
 

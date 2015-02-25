@@ -37,7 +37,7 @@ module Jtv
     end
 
     def connection
-      @connection ||= Faraday.new 'http://api.justin.tv', options
+      @connection ||= Faraday.new 'https://api.twitch.tv/kraken', options
     end
 
     def req_header method, path, params

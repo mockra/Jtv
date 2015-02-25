@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.justin.tv/channel/archives/dotahut.json?channel=dotahut&limit=2
+    uri: https://api.twitch.tv/kraken/channels/test_channel/videos.json?channel=test_channel&limit=2
     body:
       encoding: US-ASCII
       string: ''
@@ -12,8 +12,9 @@ http_interactions:
       User-Agent:
       - Jtv Gem
       Authorization:
-      - OAuth oauth_nonce="313bbd99f785484b9cf6e0f0152c1d9b", oauth_signature="OAnY7J6oMHXabdyDIx83PMfMjdw%3D",
-        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1368408351", oauth_version="1.0"
+      - OAuth oauth_consumer_key="", oauth_nonce="8021230e12a94d3c88b2a1cb8267140d",
+        oauth_signature="5dKQdylAXEJlV2OgZISmN0fzApk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1424824758", oauth_token="", oauth_version="1.0"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -24,44 +25,48 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 13 May 2013 01:25:50 GMT
+      - Wed, 25 Feb 2015 00:39:19 GMT
       Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
+      - application/json; charset=utf-8
+      Content-Length:
+      - '395'
       Connection:
-      - close
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Api-Version:
+      - '3'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - max-age=300, public
       Vary:
-      - Accept-Language, Cookie
-      Content-Language:
-      - en
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"83df9a8094218f78b5b5710f333b01a9"'
+      X-Request-Id:
+      - d9907a8420f2d723dab29ff13bb1380e
+      X-Runtime:
+      - '0.058918'
+      Accept-Ranges:
+      - bytes
+      X-Varnish:
+      - '2681479047'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-Mh-Cache:
+      - appcache2; M
       Front-End-Https:
-      - 'off'
+      - 'on'
     body:
       encoding: UTF-8
-      string: '[{"video_file_url": "http://store33.media33.justin.tv/archives/2013-3-3/live_user_dotahut_1362345627.flv",
-        "kind": null, "tag_list": "", "video_rotation": 0, "title": "DotaHut Invitational:
-        Fnatic vs. Mouz (Grand Finals) casted by Maut", "created_on": "2013-03-03
-        21:45:21 UTC", "stream_name": "live_user_dotahut", "filtered": "unchecked",
-        "video_bitrate": null, "updated_on": "2013-05-12 15:53:11 UTC", "save_forever":
-        "true", "id": 373537869, "file_name": "2013-3-3/live_user_dotahut_1362345627.flv",
-        "broadcaster": "delay", "broadcast_id": 5016397072, "user_id": 38409951, "origin_name":
-        "3842704", "file_size": 286290322, "deleted_by_user": "false", "broadcast_part":
-        "4", "keyframes": null, "length": "1470", "image_url_medium": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-373537869-150x113.jpg",
-        "servers": "35", "start_time": "2013-03-03 21:20:27 UTC", "last_part": "",
-        "video_codec": "AVC", "audio_codec": "aac", "parent_archive_id": null, "description":
-        null, "include_on_channel": "none", "status": null}, {"video_file_url": "http://store21.media21.justin.tv/archives/2013-3-3/live_user_dotahut_1362343814.flv",
-        "kind": null, "tag_list": "", "video_rotation": 0, "title": "DotaHut Invitational:
-        Fnatic vs. Mouz (Grand Finals) casted by Maut", "created_on": "2013-03-03
-        21:20:42 UTC", "stream_name": "live_user_dotahut", "filtered": "unchecked",
-        "video_bitrate": null, "updated_on": "2013-03-03 21:20:44 UTC", "save_forever":
-        "true", "id": 373529497, "file_name": "2013-3-3/live_user_dotahut_1362343814.flv",
-        "broadcaster": "delay", "broadcast_id": 5016397072, "user_id": 38409951, "origin_name":
-        "3842704", "file_size": 253298632, "deleted_by_user": "false", "broadcast_part":
-        "3", "keyframes": null, "length": "1812", "image_url_medium": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-373529497-150x113.jpg",
-        "servers": "22", "start_time": "2013-03-03 20:50:14 UTC", "last_part": "",
-        "video_codec": "AVC", "audio_codec": "aac", "parent_archive_id": null, "description":
-        null, "include_on_channel": "none", "status": null}]'
+      string: '{"_total":9,"_links":{"self":"https://api.twitch.tv/kraken/channels/test_channel/videos?limit=2&offset=0&user=test_channel","next":"https://api.twitch.tv/kraken/channels/test_channel/videos?limit=2&offset=2&user=test_channel"},"videos":[{"title":"robot
+        greeting 2","description":"greeting","broadcast_id":null,"status":"recorded","tag_list":"","_id":"c213462","recorded_at":"2009-12-15T10:03:04Z","game":null,"length":75,"preview":null,"url":"http://www.twitch.tv/test_channel/c/213462","views":2,"broadcast_type":"highlight","_links":{"self":"https://api.twitch.tv/kraken/videos/c213462","channel":"https://api.twitch.tv/kraken/channels/test_channel"},"channel":{"name":"test_channel","display_name":"Test_channel"}},{"title":"echobot2","description":"testing
+        the bot","broadcast_id":null,"status":"recorded","tag_list":"","_id":"c213497","recorded_at":"2009-12-15T07:58:43Z","game":null,"length":43,"preview":null,"url":"http://www.twitch.tv/test_channel/c/213497","views":0,"broadcast_type":"highlight","_links":{"self":"https://api.twitch.tv/kraken/videos/c213497","channel":"https://api.twitch.tv/kraken/channels/test_channel"},"channel":{"name":"test_channel","display_name":"Test_channel"}}]}'
     http_version: 
-  recorded_at: Mon, 13 May 2013 01:25:51 GMT
-recorded_with: VCR 2.4.0
+  recorded_at: Wed, 25 Feb 2015 00:39:19 GMT
+recorded_with: VCR 2.9.3

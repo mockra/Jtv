@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.twitch.tv/kraken/users/augury.json
+    uri: https://api.twitch.tv/kraken/streams/summary.json
     body:
       encoding: US-ASCII
       string: ''
@@ -12,9 +12,9 @@ http_interactions:
       User-Agent:
       - Jtv Gem
       Authorization:
-      - OAuth oauth_consumer_key="", oauth_nonce="2db23dc1c0d473bca3ef3068d327b166",
-        oauth_signature="9CoSG2pFT%2FAW4dQxT9uWtNd2Ojc%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1424824760", oauth_token="", oauth_version="1.0"
+      - OAuth oauth_consumer_key="", oauth_nonce="098174bd2d58c2e8b20c5ab9d36d9fa7",
+        oauth_signature="H5YhgKp0cc8kTwBlYesWQhpzPNY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1424824759", oauth_token="", oauth_version="1.0"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -25,11 +25,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 25 Feb 2015 00:39:21 GMT
+      - Wed, 25 Feb 2015 00:39:19 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '254'
+      - '115'
       Connection:
       - keep-alive
       Status:
@@ -39,32 +39,32 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cache-Control:
-      - max-age=30, public
+      - max-age=60, public
       Vary:
       - Accept-Encoding
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"537f2c19da3328ca6e0fdc914cf53443"'
+      - '"759bc179e408ad159672445ea5107a0b"'
       X-Request-Id:
-      - fdff5b92c0878653630b7fba1a8dc216
+      - cb30397b7edaffba27997c679d0415f9
       X-Runtime:
-      - '0.016308'
+      - '0.342932'
       Accept-Ranges:
       - bytes
       X-Varnish:
-      - '2142023576'
+      - '2681480993'
       Age:
       - '0'
       Via:
       - 1.1 varnish
       X-Mh-Cache:
-      - appcache1; M
+      - appcache2; M
       Front-End-Https:
       - 'on'
     body:
       encoding: UTF-8
-      string: '{"display_name":"Augury","_id":8764896,"name":"augury","type":"user","bio":null,"created_at":"2009-10-18T22:13:30Z","updated_at":"2015-02-17T02:07:22Z","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/augury-profile_image-fed592481d356caa-300x300.jpeg","_links":{"self":"https://api.twitch.tv/kraken/users/augury"}}'
+      string: '{"channels":18724,"viewers":516508,"_links":{"self":"https://api.twitch.tv/kraken/streams/summary"}}'
     http_version: 
-  recorded_at: Wed, 25 Feb 2015 00:39:21 GMT
+  recorded_at: Wed, 25 Feb 2015 00:39:19 GMT
 recorded_with: VCR 2.9.3

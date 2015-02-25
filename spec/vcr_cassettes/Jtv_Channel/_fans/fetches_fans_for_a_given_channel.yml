@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.justin.tv/channel/fans/officecam.json?id=officecam
+    uri: https://api.twitch.tv/kraken/channels/officecam/follows.json?id=officecam
     body:
       encoding: US-ASCII
       string: ''
@@ -12,8 +12,9 @@ http_interactions:
       User-Agent:
       - Jtv Gem
       Authorization:
-      - OAuth oauth_nonce="d3d8e453c87584964d501dc25755d0df", oauth_signature="SFZwhRZJGOOFoQEVbFQnZC34OW8%3D",
-        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1368408350", oauth_version="1.0"
+      - OAuth oauth_consumer_key="", oauth_nonce="6f94182ed55f037ad3ebcb642dc30b0b",
+        oauth_signature="jUH5dYH4wBvOSvJ58nR0j7cy9Gk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1424824758", oauth_token="", oauth_version="1.0"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -24,358 +25,71 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 13 May 2013 01:25:49 GMT
+      - Wed, 25 Feb 2015 00:39:18 GMT
       Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2999'
       Connection:
-      - close
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Api-Version:
+      - '3'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - max-age=300, public
       Vary:
-      - Accept-Language, Cookie
-      Content-Language:
-      - en
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"894d091bc5b0116053ab6bdbe5aa689f"'
+      X-Request-Id:
+      - 689bc94b4f5522b4b844e0dab452bb91
+      X-Runtime:
+      - '0.549363'
+      Accept-Ranges:
+      - bytes
+      X-Varnish:
+      - '3493963927'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-Mh-Cache:
+      - appcache4; M
       Front-End-Https:
-      - 'off'
+      - 'on'
     body:
       encoding: UTF-8
-      string: '[{"broadcaster": "true", "id": 45509, "login": "joetvee", "name": "joetv",
-        "favorite_quotes": null, "location": "everywhere in connecticut", "sex": "Male",
-        "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/joetvee-profile_image-e26db006068e1654-600x600.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/joetvee-profile_image-e26db006068e1654-300x300.jpeg",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/joetvee-profile_image-e26db006068e1654-150x150.jpeg",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/joetvee-profile_image-e26db006068e1654-70x70.jpeg",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/joetvee-profile_image-e26db006068e1654-50x50.jpeg",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=joetvee\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=joetvee&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/joetvee#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from joetvee on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 85562, "login": "weedsmoker", "name": "\u2620\u2668 weedsmoker
-        \u2668\u2620", "favorite_quotes": "Give peace a chance.. but first, let''s
-        kill this motherfucker!", "location": "", "sex": "Male", "image_url_huge":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/weedsmoker-profile_image-SrbD2Jh77KnIcGj-600x600.png",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/weedsmoker-profile_image-SrbD2Jh77KnIcGj-300x300.png",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/weedsmoker-profile_image-SrbD2Jh77KnIcGj-150x150.png",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/weedsmoker-profile_image-SrbD2Jh77KnIcGj-70x70.png",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/weedsmoker-profile_image-SrbD2Jh77KnIcGj-50x50.png",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=weedsmoker\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=weedsmoker&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/weedsmoker#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from weedsmoker on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 207861, "login": "djsnag", "name": "Ron Djsnag Johnson", "favorite_quotes":
-        null, "location": "Elgin, IL", "sex": "Male", "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/djsnag-profile_image-5aa1188623e2fbe1-600x600.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/djsnag-profile_image-5aa1188623e2fbe1-300x300.jpeg",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/djsnag-profile_image-5aa1188623e2fbe1-150x150.jpeg",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/djsnag-profile_image-5aa1188623e2fbe1-70x70.jpeg",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/djsnag-profile_image-5aa1188623e2fbe1-50x50.jpeg",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=djsnag\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=djsnag&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/djsnag#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from djsnag on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 353156, "login": "freshkurt", "name": "Kurt", "favorite_quotes":
-        "Watch Bartz on Salvia lol", "location": "too eazy lol", "sex": "Male", "image_url_huge":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/freshkurt-profile_image-1c9a452a8d603b94-600x600.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/freshkurt-profile_image-1c9a452a8d603b94-300x300.jpeg",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/freshkurt-profile_image-1c9a452a8d603b94-150x150.jpeg",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/freshkurt-profile_image-1c9a452a8d603b94-70x70.jpeg",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/freshkurt-profile_image-1c9a452a8d603b94-50x50.jpeg",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=freshkurt\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=freshkurt&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/freshkurt#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from freshkurt on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 363823, "login": "alter_ego", "name": "Yuriy", "favorite_quotes":
-        "kioken: \"Cats dont need lips. They dont kiss... they lick.\" ijustine: \"Nobody
-        takes a picture of something they want to forget.\"", "location": "Ukraine",
-        "sex": "Male", "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/alter_ego-profile_image-3269677d90b88657-600x600.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/alter_ego-profile_image-3269677d90b88657-300x300.jpeg",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/alter_ego-profile_image-3269677d90b88657-150x150.jpeg",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/alter_ego-profile_image-3269677d90b88657-70x70.jpeg",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/alter_ego-profile_image-3269677d90b88657-50x50.jpeg",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=alter_ego\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=alter_ego&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/alter_ego#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from alter_ego on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 419723, "login": "adrian_11uk", "name": "Adrian Bellis", "favorite_quotes":
-        null, "location": "", "sex": "Male", "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/adrian_11uk-profile_image-eyjRgHZd2JNsj9X-600x600.jpg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/adrian_11uk-profile_image-eyjRgHZd2JNsj9X-300x300.jpg",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/adrian_11uk-profile_image-eyjRgHZd2JNsj9X-150x150.jpg",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/adrian_11uk-profile_image-eyjRgHZd2JNsj9X-70x70.jpg",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/adrian_11uk-profile_image-eyjRgHZd2JNsj9X-50x50.jpg",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=adrian_11uk\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=adrian_11uk&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/adrian_11uk#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from adrian_11uk on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 471453, "login": "sonos", "name": "S0N0S", "favorite_quotes":
-        null, "location": "USA", "sex": "Male", "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/sonos-profile_image-49b6f7a8282233fc-600x600.png",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/sonos-profile_image-49b6f7a8282233fc-300x300.png",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/sonos-profile_image-49b6f7a8282233fc-150x150.png",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/sonos-profile_image-49b6f7a8282233fc-70x70.png",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/sonos-profile_image-49b6f7a8282233fc-50x50.png",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=sonos\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=sonos&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/sonos#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from sonos on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 556131, "login": "visionthing", "name": "Visionthing", "favorite_quotes":
-        null, "location": "San Francisco", "sex": "Male", "image_url_huge": "http://www-cdn.jtvnw.net/static/images/404_user_600x600.png",
-        "image_url_large": "http://www-cdn.jtvnw.net/static/images/404_user_300x300.png",
-        "image_url_medium": "http://www-cdn.jtvnw.net/static/images/404_user_150x150.png",
-        "image_url_small": "http://www-cdn.jtvnw.net/static/images/404_user_70x70.png",
-        "image_url_tiny": "http://www-cdn.jtvnw.net/static/images/404_user_50x50.png",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=visionthing\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=visionthing&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/visionthing#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from visionthing on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 1127574, "login": "adamrock1", "name": "Adam", "favorite_quotes":
-        null, "location": "Earth", "sex": "Male", "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/adamrock1-profile_image-115a40082d8ecf0f-600x600.png",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/adamrock1-profile_image-115a40082d8ecf0f-300x300.png",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/adamrock1-profile_image-115a40082d8ecf0f-150x150.png",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/adamrock1-profile_image-115a40082d8ecf0f-70x70.png",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/adamrock1-profile_image-115a40082d8ecf0f-50x50.png",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=adamrock1\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=adamrock1&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/adamrock1#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from adamrock1 on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 2687073, "login": "greendog29", "name": "greendog29", "favorite_quotes":
-        "\"oh and can you make me a birdhouse or something.\"", "location": "Iowa",
-        "sex": "Male", "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/greendog29-profile_image-534a4edda635c29f-600x600.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/greendog29-profile_image-534a4edda635c29f-300x300.jpeg",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/greendog29-profile_image-534a4edda635c29f-150x150.jpeg",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/greendog29-profile_image-534a4edda635c29f-70x70.jpeg",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/greendog29-profile_image-534a4edda635c29f-50x50.jpeg",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=greendog29\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=greendog29&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/greendog29#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from greendog29 on www.justin.tv</a>", "pro_account": "true"}, {"broadcaster":
-        "true", "id": 3130130, "login": "japester", "name": "Japester", "favorite_quotes":
-        "\"lol\"", "location": "On a boat", "sex": "Male", "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/japester-profile_image-910cb79afc0a4de6-600x600.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/japester-profile_image-910cb79afc0a4de6-300x300.jpeg",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/japester-profile_image-910cb79afc0a4de6-150x150.jpeg",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/japester-profile_image-910cb79afc0a4de6-70x70.jpeg",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/japester-profile_image-910cb79afc0a4de6-50x50.jpeg",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=japester\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=japester&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/japester#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from japester on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 3489391, "login": "danielswe", "name": null, "favorite_quotes":
-        null, "location": null, "sex": null, "image_url_huge": "http://www-cdn.jtvnw.net/static/images/404_user_600x600.png",
-        "image_url_large": "http://www-cdn.jtvnw.net/static/images/404_user_300x300.png",
-        "image_url_medium": "http://www-cdn.jtvnw.net/static/images/404_user_150x150.png",
-        "image_url_small": "http://www-cdn.jtvnw.net/static/images/404_user_70x70.png",
-        "image_url_tiny": "http://www-cdn.jtvnw.net/static/images/404_user_50x50.png",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=danielswe\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=danielswe&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/danielswe#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from danielswe on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 4064356, "login": "kimly", "name": "Kimly", "favorite_quotes":
-        "\"The idea is to write it so that people hear it\r\nand it slides through
-        the brain and goes straight to the heart.\"", "location": "Portland ME United
-        States", "sex": "Female", "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/kimly-profile_image-I4f55zgKozUaDiX-600x600.jpg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/kimly-profile_image-I4f55zgKozUaDiX-300x300.jpg",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/kimly-profile_image-I4f55zgKozUaDiX-150x150.jpg",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/kimly-profile_image-I4f55zgKozUaDiX-70x70.jpg",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/kimly-profile_image-I4f55zgKozUaDiX-50x50.jpg",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=kimly\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=kimly&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/kimly#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from kimly on www.justin.tv</a>", "pro_account": "true"}, {"broadcaster":
-        "true", "id": 4601665, "login": "xint", "name": "xint", "favorite_quotes":
-        null, "location": "Somewhere on the Internet", "sex": "Male", "image_url_huge":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/xint-profile_image-e40ea47db3020681-600x600.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/xint-profile_image-e40ea47db3020681-300x300.jpeg",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/xint-profile_image-e40ea47db3020681-150x150.jpeg",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/xint-profile_image-e40ea47db3020681-70x70.jpeg",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/xint-profile_image-e40ea47db3020681-50x50.jpeg",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=xint\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=xint&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/xint#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from xint on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 5141145, "login": "acrobg", "name": "Acro BG", "favorite_quotes":
-        "\"DON''T BE A DOUCHE TACO!\"", "location": "", "sex": "Male", "image_url_huge":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/acrobg-profile_image-FGbZiAWphysKxqG-600x600.png",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/acrobg-profile_image-FGbZiAWphysKxqG-300x300.png",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/acrobg-profile_image-FGbZiAWphysKxqG-150x150.png",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/acrobg-profile_image-FGbZiAWphysKxqG-70x70.png",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/acrobg-profile_image-FGbZiAWphysKxqG-50x50.png",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=acrobg\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=acrobg&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/acrobg#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from acrobg on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 5299606, "login": "dunkstypes", "name": null, "favorite_quotes":
-        null, "location": "Portland ME United States", "sex": "Female", "image_url_huge":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/dunkstypes-profile_image-0ab74276cf2d6bf7-600x600.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/dunkstypes-profile_image-0ab74276cf2d6bf7-300x300.jpeg",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/dunkstypes-profile_image-0ab74276cf2d6bf7-150x150.jpeg",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/dunkstypes-profile_image-0ab74276cf2d6bf7-70x70.jpeg",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/dunkstypes-profile_image-0ab74276cf2d6bf7-50x50.jpeg",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=dunkstypes\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=dunkstypes&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/dunkstypes#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from dunkstypes on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 6415733, "login": "zuloc", "name": "Zuloc", "favorite_quotes":
-        null, "location": "Canada", "sex": "Male", "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/zuloc-profile_image-b6a17edb4d27d3b5-600x600.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/zuloc-profile_image-b6a17edb4d27d3b5-300x300.jpeg",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/zuloc-profile_image-b6a17edb4d27d3b5-150x150.jpeg",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/zuloc-profile_image-b6a17edb4d27d3b5-70x70.jpeg",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/zuloc-profile_image-b6a17edb4d27d3b5-50x50.jpeg",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=zuloc\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=zuloc&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/zuloc#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from zuloc on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 6594982, "login": "martinmachuca", "name": null, "favorite_quotes":
-        null, "location": null, "sex": null, "image_url_huge": "http://www-cdn.jtvnw.net/static/images/404_user_600x600.png",
-        "image_url_large": "http://www-cdn.jtvnw.net/static/images/404_user_300x300.png",
-        "image_url_medium": "http://www-cdn.jtvnw.net/static/images/404_user_150x150.png",
-        "image_url_small": "http://www-cdn.jtvnw.net/static/images/404_user_70x70.png",
-        "image_url_tiny": "http://www-cdn.jtvnw.net/static/images/404_user_50x50.png",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=martinmachuca\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=martinmachuca&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/martinmachuca#r=-rid-&amp;s=em\"
-        class=\"trk\" style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from martinmachuca on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 6655039, "login": "radio_mac", "name": "Mac Daddy", "favorite_quotes":
-        "Hot Sauce, ''Ham Mercy''", "location": "", "sex": "Male", "image_url_huge":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/radio_mac-profile_image-WO6HF8wmnQQT5Vw-600x600.png",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/radio_mac-profile_image-WO6HF8wmnQQT5Vw-300x300.png",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/radio_mac-profile_image-WO6HF8wmnQQT5Vw-150x150.png",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/radio_mac-profile_image-WO6HF8wmnQQT5Vw-70x70.png",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/radio_mac-profile_image-WO6HF8wmnQQT5Vw-50x50.png",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=radio_mac\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=radio_mac&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/radio_mac#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from radio_mac on www.justin.tv</a>", "pro_account": "false"}, {"broadcaster":
-        "true", "id": 6867444, "login": "wuzhir", "name": "wuzhir", "favorite_quotes":
-        "\"Donna took my bed\" \u2190 Jollyrodger,  \r\n\"Whatever you''re doing,
-        I''m sure it''s wrong\"\u2190  Unknown, \r\n\"What''s the knife for? Are we
-        having cake?\" \u2190 Jay", "location": "Latitude: 49.263\u00b0, Longitude:
-        -123.138\u00b0, Greenwich Mean Time (GMT) -8 PST", "sex": "Male", "image_url_huge":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/wuzhir-profile_image-449d2aeb98458115-600x600.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/wuzhir-profile_image-449d2aeb98458115-300x300.jpeg",
-        "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/wuzhir-profile_image-449d2aeb98458115-150x150.jpeg",
-        "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/wuzhir-profile_image-449d2aeb98458115-70x70.jpeg",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/wuzhir-profile_image-449d2aeb98458115-50x50.jpeg",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=wuzhir\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=wuzhir&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/wuzhir#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from wuzhir on www.justin.tv</a>", "pro_account": "false"}]'
+      string: '{"follows":[{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/btmtv/follows/channels/officecam"},"notifications":false,"user":{"_id":180385,"name":"btmtv","created_at":"2007-11-22T02:42:00Z","updated_at":"2011-07-09T15:27:22Z","_links":{"self":"https://api.twitch.tv/kraken/users/btmtv"},"display_name":"Btmtv","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/btmtv-profile_image-6272b7d145c6e136-300x300.jpeg","bio":"BTMTELEVISION.com
+        - Bill T Miller broadcasting NOISE from Headroom Studios in Boston. more info:
+        billtmiller.com","type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/wyman22/follows/channels/officecam"},"notifications":true,"user":{"_id":176132,"name":"wyman22","created_at":"2007-11-19T01:45:00Z","updated_at":"2008-06-29T09:16:10Z","_links":{"self":"https://api.twitch.tv/kraken/users/wyman22"},"display_name":"Wyman22","logo":null,"bio":null,"type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/manx/follows/channels/officecam"},"notifications":true,"user":{"_id":8142,"name":"manx","created_at":"2007-05-22T10:39:07Z","updated_at":"2014-10-28T08:33:25Z","_links":{"self":"https://api.twitch.tv/kraken/users/manx"},"display_name":"Manx","logo":null,"bio":null,"type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/bananapeeler/follows/channels/officecam"},"notifications":false,"user":{"_id":31433,"name":"bananapeeler","created_at":"2007-06-03T04:07:15Z","updated_at":"2014-09-21T08:53:31Z","_links":{"self":"https://api.twitch.tv/kraken/users/bananapeeler"},"display_name":"Bananapeeler","logo":null,"bio":"I''m
+        a regular old banana peeler that enjoys chatting on Justin.TV  I''m good at
+        computers and internet.  I like people.  I''m over 33.33 years of age.  I
+        don''t like script kiddies[1].  I like Real Programmers[2].  To call the bananapeeler,
+        just type in \"bananapeeler\" in the chat box.\r","type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/sachax/follows/channels/officecam"},"notifications":true,"user":{"_id":187010,"name":"sachax","created_at":"2007-11-28T09:52:26Z","updated_at":"2014-11-02T14:24:59Z","_links":{"self":"https://api.twitch.tv/kraken/users/sachax"},"display_name":"Sachax","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/sachax-profile_image-6W0B9lZKJsTp1qq-300x300.JPG","bio":"Life
+        is moments... these are some... of mines :-)","type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/zingwatdotcom/follows/channels/officecam"},"notifications":true,"user":{"_id":194744,"name":"zingwatdotcom","created_at":"2007-12-05T23:25:49Z","updated_at":"2011-09-14T06:16:54Z","_links":{"self":"https://api.twitch.tv/kraken/users/zingwatdotcom"},"display_name":"Zingwatdotcom","logo":null,"bio":"This
+        is nothing. I''ll be broadcasting every so often.","type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/smojo/follows/channels/officecam"},"notifications":false,"user":{"_id":4718,"name":"smojo","created_at":"2007-05-22T10:38:31Z","updated_at":"2015-02-24T03:48:28Z","_links":{"self":"https://api.twitch.tv/kraken/users/smojo"},"display_name":"Smojo","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/smojo-profile_image-45bed655b99d5fef-300x300.jpeg","bio":"Hello
+        I''m Steve but better known around here as smojo. I''m a 25 year old living
+        in Chandler, AZ. My stream will be up at random times during the day. ","type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/mommarose/follows/channels/officecam"},"notifications":false,"user":{"_id":109492,"name":"mommarose","created_at":"2007-09-24T16:58:04Z","updated_at":"2015-02-19T17:20:36Z","_links":{"self":"https://api.twitch.tv/kraken/users/mommarose"},"display_name":"Mommarose","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/mommarose-profile_image-8cdd9d7f0c007a33-300x300.jpeg","bio":"Hi
+        & Welcome..I Am MommaRose....Please Don''t Be Rude & We Will Get Along Fine!
+        DO NOT POST LINKS WITHOUT ASKING 1st & GETTING MY APPROVAL UNLESS YOU WANT
+        TO BE BANNED FROM MY CHANNEL!!!","type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/cc30tv/follows/channels/officecam"},"notifications":true,"user":{"_id":44847,"name":"cc30tv","created_at":"2007-07-24T00:45:47Z","updated_at":"2015-02-20T14:16:20Z","_links":{"self":"https://api.twitch.tv/kraken/users/cc30tv"},"display_name":"Cc30tv","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/cc30tv-profile_image-04fd5e4e3442a928-300x300.jpeg","bio":"CC30.TV
+        the 1st French and French-speaking channel on Justin.tv since July 2007 \u2014
+        CC30.TV 1ere cha\u00eene Fran\u00e7aise et Francophone de Justin.tv depuis
+        juillet 2007","type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/exadon/follows/channels/officecam"},"notifications":false,"user":{"_id":194005,"name":"exadon","created_at":"2007-12-05T01:54:40Z","updated_at":"2014-10-12T20:36:51Z","_links":{"self":"https://api.twitch.tv/kraken/users/exadon"},"display_name":"Exadon","logo":null,"bio":"Late
+        night with Paul!  A fun wacky time with your host Paul, and his sexy and witty
+        friends. Join us for raids, game and movie reviews, rants, games, and more!
+        Call any time during the show Phone# (443) 450-4491 Skype: Exadon","type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/train/follows/channels/officecam"},"notifications":false,"user":{"_id":35442,"name":"train","created_at":"2007-06-19T03:20:13Z","updated_at":"2014-10-13T17:19:38Z","_links":{"self":"https://api.twitch.tv/kraken/users/train"},"display_name":"Train","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/train-profile_image-JoVYYl6loyZRJRL-300x300.jpg","bio":"Just
+        here to chat and have fun, listen to music, i don''t really lifecast as i
+        work, so usually on a weekend or when i have time offI have a 15.4 laptop
+        with built in cam and a desktop that i use a logitech pro 9000","type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/soupnazi/follows/channels/officecam"},"notifications":false,"user":{"_id":2379,"name":"soupnazi","created_at":"2007-05-22T10:38:08Z","updated_at":"2014-08-18T20:18:27Z","_links":{"self":"https://api.twitch.tv/kraken/users/soupnazi"},"display_name":"Soupnazi","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/soupnazi-profile_image-18e9c228412694f4-300x300.jpeg","bio":"test","type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/joetvee/follows/channels/officecam"},"notifications":false,"user":{"_id":45509,"name":"joetvee","created_at":"2007-07-26T22:34:19Z","updated_at":"2013-06-15T10:26:29Z","_links":{"self":"https://api.twitch.tv/kraken/users/joetvee"},"display_name":"Joetvee","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/joetvee-profile_image-e26db006068e1654-300x300.jpeg","bio":"This
+        channel is now reserved as a test project. \r\r\r","type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/idrew/follows/channels/officecam"},"notifications":true,"user":{"_id":83798,"name":"idrew","created_at":"2007-09-02T21:42:12Z","updated_at":"2011-11-22T05:00:46Z","_links":{"self":"https://api.twitch.tv/kraken/users/idrew"},"display_name":"Idrew","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/idrew-profile_image-0598c69b6ca3fd77-300x300.jpeg","bio":"Drew
+        is a web designer that lives in Tennessee. Watch him in his everyday life.","type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/sashanicole/follows/channels/officecam"},"notifications":true,"user":{"_id":7470,"name":"sashanicole","created_at":"2007-05-22T10:39:01Z","updated_at":"2014-08-31T04:18:43Z","_links":{"self":"https://api.twitch.tv/kraken/users/sashanicole"},"display_name":"Sashanicole","logo":null,"bio":null,"type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/yourstruly/follows/channels/officecam"},"notifications":true,"user":{"_id":45603,"name":"yourstruly","created_at":"2007-07-27T18:54:29Z","updated_at":"2014-12-26T17:28:49Z","_links":{"self":"https://api.twitch.tv/kraken/users/yourstruly"},"display_name":"YoursTruly","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/yourstruly-profile_image-SFeZbCmPsxnwX9B-300x300.png","bio":null,"type":"user"}},{"created_at":null,"_links":{"self":"https://api.twitch.tv/kraken/users/mikeyd88/follows/channels/officecam"},"notifications":true,"user":{"_id":202960,"name":"mikeyd88","created_at":"2007-12-16T05:11:07Z","updated_at":"2010-08-18T15:46:38Z","_links":{"self":"https://api.twitch.tv/kraken/users/mikeyd88"},"display_name":"Mikeyd88","logo":null,"bio":null,"type":"user"}},{"created_at":"2015-01-31T17:51:09Z","_links":{"self":"https://api.twitch.tv/kraken/users/hapy_cammpr/follows/channels/officecam"},"notifications":true,"user":{"_id":68104489,"name":"hapy_cammpr","created_at":"2014-08-03T22:48:44Z","updated_at":"2015-02-13T00:17:50Z","_links":{"self":"https://api.twitch.tv/kraken/users/hapy_cammpr"},"display_name":"Hapy_cammpr","logo":null,"bio":null,"type":"user"}},{"created_at":"2014-12-16T20:57:43Z","_links":{"self":"https://api.twitch.tv/kraken/users/britta_fb_2/follows/channels/officecam"},"notifications":true,"user":{"_id":68950638,"name":"britta_fb_2","created_at":"2014-08-14T11:23:36Z","updated_at":"2015-02-22T18:42:59Z","_links":{"self":"https://api.twitch.tv/kraken/users/britta_fb_2"},"display_name":"Britta_fb_2","logo":null,"bio":null,"type":"user"}},{"created_at":"2014-11-28T05:23:12Z","_links":{"self":"https://api.twitch.tv/kraken/users/hayesgrier/follows/channels/officecam"},"notifications":true,"user":{"_id":68152332,"name":"hayesgrier","created_at":"2014-08-04T16:09:50Z","updated_at":"2015-02-21T20:34:05Z","_links":{"self":"https://api.twitch.tv/kraken/users/hayesgrier"},"display_name":"HayesGrier","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/hayesgrier-profile_image-89213fe273173006-300x300.jpeg","bio":"hi","type":"user"}},{"created_at":"2014-11-17T07:43:05Z","_links":{"self":"https://api.twitch.tv/kraken/users/noodles_tt/follows/channels/officecam"},"notifications":true,"user":{"_id":59987729,"name":"noodles_tt","created_at":"2014-03-31T21:26:18Z","updated_at":"2015-02-18T21:31:19Z","_links":{"self":"https://api.twitch.tv/kraken/users/noodles_tt"},"display_name":"Noodles_TT","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/noodles_tt-profile_image-1be7d29e03dc5e00-300x300.png","bio":"Professional
+        Face Spanker","type":"user"}},{"created_at":"2014-11-11T21:31:12Z","_links":{"self":"https://api.twitch.tv/kraken/users/misspsykho/follows/channels/officecam"},"notifications":true,"user":{"_id":62322016,"name":"misspsykho","created_at":"2014-05-08T21:27:54Z","updated_at":"2015-02-20T15:43:39Z","_links":{"self":"https://api.twitch.tv/kraken/users/misspsykho"},"display_name":"MissPsykho","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/misspsykho-profile_image-23b824046064cc8b-300x300.jpeg","bio":"HELLO?!","type":"user"}},{"created_at":"2014-10-29T21:57:00Z","_links":{"self":"https://api.twitch.tv/kraken/users/megster75271/follows/channels/officecam"},"notifications":true,"user":{"_id":74020034,"name":"megster75271","created_at":"2014-10-29T21:56:59Z","updated_at":"2014-11-14T20:46:27Z","_links":{"self":"https://api.twitch.tv/kraken/users/megster75271"},"display_name":"megster75271","logo":null,"bio":null,"type":"user"}},{"created_at":"2014-10-20T02:07:59Z","_links":{"self":"https://api.twitch.tv/kraken/users/calliepescay/follows/channels/officecam"},"notifications":true,"user":{"_id":73413338,"name":"calliepescay","created_at":"2014-10-20T02:04:21Z","updated_at":"2014-11-13T12:01:15Z","_links":{"self":"https://api.twitch.tv/kraken/users/calliepescay"},"display_name":"Calliepescay","logo":null,"bio":null,"type":"user"}},{"created_at":"2014-10-19T01:34:08Z","_links":{"self":"https://api.twitch.tv/kraken/users/5sos_is_lifee/follows/channels/officecam"},"notifications":true,"user":{"_id":73141719,"name":"5sos_is_lifee","created_at":"2014-10-16T00:36:49Z","updated_at":"2014-11-07T01:27:13Z","_links":{"self":"https://api.twitch.tv/kraken/users/5sos_is_lifee"},"display_name":"5sos_is_lifee","logo":null,"bio":null,"type":"user"}}],"_total":2637,"_links":{"self":"https://api.twitch.tv/kraken/channels/officecam/follows?direction=DESC&limit=25&offset=0","next":"https://api.twitch.tv/kraken/channels/officecam/follows?direction=DESC&limit=25&offset=25"}}'
     http_version: 
-  recorded_at: Mon, 13 May 2013 01:25:51 GMT
-recorded_with: VCR 2.4.0
+  recorded_at: Wed, 25 Feb 2015 00:39:18 GMT
+recorded_with: VCR 2.9.3

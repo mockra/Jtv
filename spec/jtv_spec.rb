@@ -20,11 +20,11 @@ describe Jtv do
 
   context 'when delegating to client' do
     before do
-      Jtv.stub(:client) { client }
+      allow(Jtv).to receive(:client).and_return client
     end
 
     it 'calls the correct method on client' do
-      client.should_receive(:get).with '/test'
+      expect(client).to receive(:get).with '/test'
       Jtv.get '/test'
     end
 

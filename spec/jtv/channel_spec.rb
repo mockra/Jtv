@@ -7,14 +7,14 @@ describe Jtv::Channel do
 
   describe '#channel_show' do
     it 'sends path with user to get' do
-      client.should_receive(:get).with 'channel/show/test.json'
+      expect(client).to receive(:get).with 'channels/test.json'
       client.channel_show 'test'
     end
   end
 
   describe '#fans' do
     it 'sends fans and params to get' do
-      client.should_receive(:get).with 'channel/fans/test.json',
+      expect(client).to receive(:get).with 'channels/test/follows.json',
         { channel: 'test' }
       client.fans channel: 'test'
     end
@@ -22,25 +22,9 @@ describe Jtv::Channel do
 
   describe '#archives' do
     it 'sends archives and params to get' do
-      client.should_receive(:get).with 'channel/archives/test.json',
+      expect(client).to receive(:get).with 'channels/test/videos.json',
         { id: 'test' }
       client.archives id: 'test'
-    end
-  end
-
-  describe '#embed' do
-    it 'sends :get, embed path with login and params to request' do
-      client.should_receive(:request).with(:get, 'channel/embed/test',
-        { volume: 50 }).and_return({})
-      client.embed 'test', volume: 50
-    end
-  end
-
-  describe '#chat_embed' do
-    it 'sends :get, chat_embed path with login and params to request' do
-      client.should_receive(:request).with(:get, 'channel/chat_embed/justin',
-        { height: 50 }).and_return({})
-      client.chat_embed 'justin', height: 50
     end
   end
 end

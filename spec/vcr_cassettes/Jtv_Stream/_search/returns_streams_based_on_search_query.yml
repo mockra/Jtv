@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.justin.tv/stream/search/league%20of%20legends.json?limit=10
+    uri: https://api.twitch.tv/kraken/search/streams.json?q=starcraft
     body:
       encoding: US-ASCII
       string: ''
@@ -12,8 +12,9 @@ http_interactions:
       User-Agent:
       - Jtv Gem
       Authorization:
-      - OAuth oauth_nonce="e2a69024732ed935d6452d3599d088b0", oauth_signature="pICrS75dpYoTbMuhb73SrICVG04%3D",
-        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1368407744", oauth_version="1.0"
+      - OAuth oauth_consumer_key="", oauth_nonce="fff5bbf95f4867507d50f0e8359bd414",
+        oauth_signature="4L1m%2FBuspaprSXUBx78wR5cpqZA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1424824760", oauth_token="", oauth_version="1.0"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -24,341 +25,72 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 13 May 2013 01:15:43 GMT
+      - Wed, 25 Feb 2015 00:39:20 GMT
       Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2732'
       Connection:
-      - close
-      Content-Language:
-      - en
-      Expires:
-      - Mon, 13 May 2013 01:16:13 GMT
-      Vary:
-      - Accept-Language, Cookie
-      Last-Modified:
-      - Mon, 13 May 2013 01:15:43 GMT
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Api-Version:
+      - '3'
+      X-Frame-Options:
+      - SAMEORIGIN
       Cache-Control:
-      - max-age=30
+      - max-age=60, public
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"fb41c1063b6d9c3d3feb2bb2bb228326"'
+      X-Request-Id:
+      - 131bcdc3cc6f6aeb612672e60847c96c
+      X-Runtime:
+      - '0.285043'
+      Accept-Ranges:
+      - bytes
+      X-Varnish:
+      - '2681486645'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-Mh-Cache:
+      - appcache2; M
       Front-End-Https:
-      - 'off'
+      - 'on'
     body:
       encoding: UTF-8
-      string: '[{"subcategory": "radio_stations", "broadcast_part": 72, "featured":
-        false, "channel_subscription": false, "audio_codec": "mp3", "id": "5639358400",
-        "category": "entertainment", "title": "Alma en Radio en vivo", "geo": "AR",
-        "site_count": 0, "embed_enabled": false, "channel": {"views_count": 42394,
-        "producer": false, "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/almaenpenia-profile_image-0399954cd7cfa8e2-600x600.jpeg",
-        "timezone": "", "screen_cap_url_huge": "http://static-cdn.jtvnw.net/previews/live_user_almaenpenia-630x473.jpg",
-        "id": "5639358400", "subcategory": "radio_stations", "category": "entertainment",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=almaenpenia\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=almaenpenia&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/almaenpenia#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from almaenpenia on www.justin.tv</a>", "title": "almaenpenia", "image_url_tiny":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/almaenpenia-profile_image-0399954cd7cfa8e2-50x50.jpeg",
-        "screen_cap_url_large": "http://static-cdn.jtvnw.net/previews/live_user_almaenpenia-320x240.jpg",
-        "embed_enabled": false, "status": "Alma en Radio en vivo", "meta_game": "",
-        "tags": null, "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/almaenpenia-profile_image-0399954cd7cfa8e2-70x70.jpeg",
-        "screen_cap_url_medium": "http://static-cdn.jtvnw.net/previews/live_user_almaenpenia-150x113.jpg",
-        "language": "es", "channel_url": "http://www.justin.tv/almaenpenia", "subcategory_title":
-        "Radio Stations", "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/almaenpenia-profile_image-0399954cd7cfa8e2-150x150.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/almaenpenia-profile_image-0399954cd7cfa8e2-300x300.jpeg",
-        "mature": null, "screen_cap_url_small": "http://static-cdn.jtvnw.net/previews/live_user_almaenpenia-70x53.jpg",
-        "login": "almaenpenia", "category_title": "Entertainment"}, "up_time": "Sat
-        May 11 06:34:50 2013", "format": "live", "channel_count": 0, "embed_count":
-        0, "abuse_reported": false, "stream_type": "live", "name": "live_user_almaenpenia",
-        "language": "es", "stream_count": 0, "video_bitrate": 65.53125, "channel_id":
-        26683806, "broadcaster": "fme", "channel_view_count": 42202}, {"subcategory":
-        "radio_stations", "broadcast_part": 100, "featured": false, "channel_subscription":
-        false, "audio_codec": "mp3", "id": "5634602960", "category": "entertainment",
-        "geo": "AR", "site_count": 0, "embed_enabled": true, "channel": {"views_count":
-        7593, "producer": false, "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/94fantastica-profile_image-c9f2d3565b096913-600x600.jpeg",
-        "timezone": "", "screen_cap_url_huge": "http://static-cdn.jtvnw.net/previews/live_user_94fantastica-630x473.jpg",
-        "id": "5634602960", "subcategory": "radio_stations", "category": "entertainment",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=94fantastica\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=94fantastica&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/94fantastica#r=-rid-&amp;s=em\"
-        class=\"trk\" style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from 94fantastica on www.justin.tv</a>", "title": "94fantastica", "image_url_tiny":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/94fantastica-profile_image-c9f2d3565b096913-50x50.jpeg",
-        "screen_cap_url_large": "http://static-cdn.jtvnw.net/previews/live_user_94fantastica-320x240.jpg",
-        "embed_enabled": true, "status": null, "meta_game": "", "tags": null, "image_url_small":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/94fantastica-profile_image-c9f2d3565b096913-70x70.jpeg",
-        "screen_cap_url_medium": "http://static-cdn.jtvnw.net/previews/live_user_94fantastica-150x113.jpg",
-        "language": "en", "channel_url": "http://www.justin.tv/94fantastica", "subcategory_title":
-        "Radio Stations", "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/94fantastica-profile_image-c9f2d3565b096913-150x150.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/94fantastica-profile_image-c9f2d3565b096913-300x300.jpeg",
-        "mature": null, "screen_cap_url_small": "http://static-cdn.jtvnw.net/previews/live_user_94fantastica-70x53.jpg",
-        "login": "94fantastica", "category_title": "Entertainment"}, "up_time": "Fri
-        May 10 16:16:57 2013", "format": "live", "channel_count": 0, "embed_count":
-        0, "abuse_reported": false, "stream_type": "live", "name": "live_user_94fantastica",
-        "language": "en", "stream_count": 0, "video_bitrate": 94.7109375, "channel_id":
-        25143187, "broadcaster": "fme", "channel_view_count": 7584}, {"subcategory":
-        "radio_stations", "broadcast_part": 131, "featured": false, "channel_subscription":
-        false, "audio_codec": "mp3", "id": "5629307120", "category": "entertainment",
-        "geo": "BR", "site_count": 0, "embed_enabled": true, "channel": {"views_count":
-        19561, "producer": false, "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/digital_flashback-profile_image-c2c35a4d1dc628f8-600x600.jpeg",
-        "timezone": "America/Sao_Paulo", "screen_cap_url_huge": "http://static-cdn.jtvnw.net/previews/live_user_digital_flashback-630x473.jpg",
-        "id": "5629307120", "subcategory": "radio_stations", "category": "entertainment",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=digital_flashback\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=digital_flashback&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/digital_flashback#r=-rid-&amp;s=em\"
-        class=\"trk\" style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from digital_flashback on www.justin.tv</a>", "title": "digital_flashback",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/digital_flashback-profile_image-c2c35a4d1dc628f8-50x50.jpeg",
-        "screen_cap_url_large": "http://static-cdn.jtvnw.net/previews/live_user_digital_flashback-320x240.jpg",
-        "embed_enabled": true, "status": null, "meta_game": "", "tags": null, "image_url_small":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/digital_flashback-profile_image-c2c35a4d1dc628f8-70x70.jpeg",
-        "screen_cap_url_medium": "http://static-cdn.jtvnw.net/previews/live_user_digital_flashback-150x113.jpg",
-        "language": "pt-br", "channel_url": "http://www.justin.tv/digital_flashback",
-        "subcategory_title": "Radio Stations", "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/digital_flashback-profile_image-c2c35a4d1dc628f8-150x150.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/digital_flashback-profile_image-c2c35a4d1dc628f8-300x300.jpeg",
-        "mature": null, "screen_cap_url_small": "http://static-cdn.jtvnw.net/previews/live_user_digital_flashback-70x53.jpg",
-        "login": "digital_flashback", "category_title": "Entertainment"}, "up_time":
-        "Fri May 10 01:04:23 2013", "format": "live", "channel_count": 0, "embed_count":
-        0, "abuse_reported": false, "stream_type": "live", "name": "live_user_digital_flashback",
-        "language": "pt-br", "stream_count": 0, "video_bitrate": 94.75, "channel_id":
-        23175580, "broadcaster": "fme", "channel_view_count": 19540}, {"subcategory":
-        "birds", "broadcast_part": 131, "featured": false, "channel_subscription":
-        false, "audio_codec": "none", "id": "5629324768", "category": "animals", "title":
-        "CGRESD Area School Chicken Cam!", "geo": "US", "video_height": 240, "site_count":
-        0, "embed_enabled": false, "channel": {"views_count": 288, "producer": false,
-        "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/cgresd-profile_image-LVS4prDymvrDGw4-600x600.jpg",
-        "timezone": "", "screen_cap_url_huge": "http://static-cdn.jtvnw.net/previews/live_user_cgresd-630x473.jpg",
-        "id": "5629324768", "subcategory": "birds", "category": "animals", "embed_code":
-        "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=cgresd\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=cgresd&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/cgresd#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from cgresd on www.justin.tv</a>", "title": "cgresd", "image_url_tiny":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/cgresd-profile_image-LVS4prDymvrDGw4-50x50.jpg",
-        "screen_cap_url_large": "http://static-cdn.jtvnw.net/previews/live_user_cgresd-320x240.jpg",
-        "embed_enabled": false, "status": "CGRESD Area School Chicken Cam!", "meta_game":
-        "", "tags": null, "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/cgresd-profile_image-LVS4prDymvrDGw4-70x70.jpg",
-        "screen_cap_url_medium": "http://static-cdn.jtvnw.net/previews/live_user_cgresd-150x113.jpg",
-        "language": "en", "channel_url": "http://www.justin.tv/cgresd", "subcategory_title":
-        "Birds", "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/cgresd-profile_image-LVS4prDymvrDGw4-150x150.jpg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/cgresd-profile_image-LVS4prDymvrDGw4-300x300.jpg",
-        "mature": null, "screen_cap_url_small": "http://static-cdn.jtvnw.net/previews/live_user_cgresd-70x53.jpg",
-        "login": "cgresd", "category_title": "Animals"}, "up_time": "Fri May 10 01:06:43
-        2013", "format": "live", "channel_count": 0, "embed_count": 0, "abuse_reported":
-        false, "video_width": 320, "stream_type": "live", "name": "live_user_cgresd",
-        "language": "en", "stream_count": 0, "video_bitrate": 70.046875, "channel_id":
-        43026396, "broadcaster": "fme", "video_codec": "VP6", "channel_view_count":
-        240}, {"subcategory": "music", "broadcast_part": 58, "featured": false, "channel_subscription":
-        false, "audio_codec": "nellymoser", "id": "5642306832", "category": "entertainment",
-        "title": "Radiosur F.M en VIVO por Justin desde Sevilla-Epa\u00f1a", "geo":
-        "ES", "site_count": 0, "embed_enabled": true, "channel": {"views_count": 110005,
-        "producer": false, "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/cristobalma-profile_image-0wchS1HY5ImAiiN-600x600.png",
-        "timezone": "", "screen_cap_url_huge": "http://static-cdn.jtvnw.net/previews/live_user_cristobalma-630x473.jpg",
-        "id": "5642306832", "subcategory": "music", "category": "entertainment", "embed_code":
-        "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=cristobalma\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=cristobalma&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/cristobalma#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from cristobalma on www.justin.tv</a>", "title": "RADIOSUR F.M 102.1",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/cristobalma-profile_image-0wchS1HY5ImAiiN-50x50.png",
-        "screen_cap_url_large": "http://static-cdn.jtvnw.net/previews/live_user_cristobalma-320x240.jpg",
-        "embed_enabled": true, "status": "Radiosur F.M en VIVO por Justin desde Sevilla-Epa\u00f1a",
-        "meta_game": "", "tags": null, "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/cristobalma-profile_image-0wchS1HY5ImAiiN-70x70.png",
-        "screen_cap_url_medium": "http://static-cdn.jtvnw.net/previews/live_user_cristobalma-150x113.jpg",
-        "language": "es", "channel_url": "http://www.justin.tv/cristobalma", "subcategory_title":
-        "Music", "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/cristobalma-profile_image-0wchS1HY5ImAiiN-150x150.png",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/cristobalma-profile_image-0wchS1HY5ImAiiN-300x300.png",
-        "mature": null, "screen_cap_url_small": "http://static-cdn.jtvnw.net/previews/live_user_cristobalma-70x53.jpg",
-        "login": "cristobalma", "category_title": "Entertainment"}, "up_time": "Sat
-        May 11 13:41:57 2013", "format": "live", "channel_count": 0, "embed_count":
-        0, "abuse_reported": false, "stream_type": "live", "name": "live_user_cristobalma",
-        "language": "es", "stream_count": 0, "video_bitrate": 11.9453125, "channel_id":
-        23563282, "broadcaster": "site", "video_codec": "SOR", "channel_view_count":
-        109847}, {"subcategory": "celebrities", "broadcast_part": 131, "featured":
-        false, "channel_subscription": false, "audio_codec": "none", "id": "5629327296",
-        "category": "entertainment", "title": "Bienvenidos al canal oficial de Alta
-        Comunicaci\u00f3n S.R.L.", "geo": "US", "video_height": 192, "site_count":
-        0, "embed_enabled": true, "channel": {"views_count": 1614, "producer": false,
-        "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/altacomunicacion-profile_image-kQ1Nm5iNjAzhaT7-600x600.jpg",
-        "timezone": "", "screen_cap_url_huge": "http://static-cdn.jtvnw.net/previews/live_user_altacomunicacion-630x473.jpg",
-        "id": "5629327296", "subcategory": "celebrities", "category": "entertainment",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=altacomunicacion\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=altacomunicacion&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/altacomunicacion#r=-rid-&amp;s=em\"
-        class=\"trk\" style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from altacomunicacion on www.justin.tv</a>", "title": "Alta Comunicacion
-        S.R.L.", "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/altacomunicacion-profile_image-kQ1Nm5iNjAzhaT7-50x50.jpg",
-        "screen_cap_url_large": "http://static-cdn.jtvnw.net/previews/live_user_altacomunicacion-320x240.jpg",
-        "embed_enabled": true, "status": "Bienvenidos al canal oficial de Alta Comunicaci\u00f3n
-        S.R.L.", "meta_game": "", "tags": null, "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/altacomunicacion-profile_image-kQ1Nm5iNjAzhaT7-70x70.jpg",
-        "screen_cap_url_medium": "http://static-cdn.jtvnw.net/previews/live_user_altacomunicacion-150x113.jpg",
-        "language": "es", "channel_url": "http://www.justin.tv/altacomunicacion",
-        "subcategory_title": "Celebrities", "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/altacomunicacion-profile_image-kQ1Nm5iNjAzhaT7-150x150.jpg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/altacomunicacion-profile_image-kQ1Nm5iNjAzhaT7-300x300.jpg",
-        "mature": null, "screen_cap_url_small": "http://static-cdn.jtvnw.net/previews/live_user_altacomunicacion-70x53.jpg",
-        "login": "altacomunicacion", "category_title": "Entertainment"}, "up_time":
-        "Fri May 10 01:06:48 2013", "format": "live", "channel_count": 0, "embed_count":
-        0, "abuse_reported": false, "video_width": 320, "stream_type": "live", "name":
-        "live_user_altacomunicacion", "language": "es", "stream_count": 0, "video_bitrate":
-        454.671875, "channel_id": 32504837, "broadcaster": "fme", "video_codec": "VP6",
-        "channel_view_count": 1612}, {"subcategory": "music", "broadcast_part": 121,
-        "featured": false, "channel_subscription": false, "audio_codec": "aac", "id":
-        "5630702608", "category": "entertainment", "title": "\u3008\u7d14\u97f3\u6a02\u5206\u6d41\u3009\u52d5\u6f2b(Anime)\u3001\u65e5\u6587(Jpop)
-        Music 24hr \u653e\u9001\u4e2d~~", "geo": "TW", "video_height": 450, "site_count":
-        0, "embed_enabled": true, "channel": {"views_count": 31605, "producer": false,
-        "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/cjs123456-profile_image-a7ba7ca354a234c2-600x600.jpeg",
-        "timezone": "Asia/Taipei", "screen_cap_url_huge": "http://static-cdn.jtvnw.net/previews/live_user_cjs123456-630x473.jpg",
-        "id": "5630702608", "subcategory": "music", "category": "entertainment", "embed_code":
-        "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=cjs123456\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=cjs123456&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/cjs123456#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from cjs123456 on www.justin.tv</a>", "title": "\u5446\u9f20\u306e\u52d5\u6f2b\u3001\u65e5\u6587\u97f3\u6a02\u53f0
-        24hr Live\uff01\uff01", "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/cjs123456-profile_image-a7ba7ca354a234c2-50x50.jpeg",
-        "screen_cap_url_large": "http://static-cdn.jtvnw.net/previews/live_user_cjs123456-320x240.jpg",
-        "embed_enabled": true, "status": "\u3008\u7d14\u97f3\u6a02\u5206\u6d41\u3009\u52d5\u6f2b(Anime)\u3001\u65e5\u6587(Jpop)
-        Music 24hr \u653e\u9001\u4e2d~~", "meta_game": "", "tags": null, "image_url_small":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/cjs123456-profile_image-a7ba7ca354a234c2-70x70.jpeg",
-        "screen_cap_url_medium": "http://static-cdn.jtvnw.net/previews/live_user_cjs123456-150x113.jpg",
-        "language": "zh-tw", "channel_url": "http://www.justin.tv/cjs123456", "subcategory_title":
-        "Music", "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/cjs123456-profile_image-a7ba7ca354a234c2-150x150.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/cjs123456-profile_image-a7ba7ca354a234c2-300x300.jpeg",
-        "mature": null, "screen_cap_url_small": "http://static-cdn.jtvnw.net/previews/live_user_cjs123456-70x53.jpg",
-        "login": "cjs123456", "category_title": "Entertainment"}, "up_time": "Fri
-        May 10 05:56:37 2013", "format": "live", "channel_count": 0, "embed_count":
-        0, "abuse_reported": false, "video_width": 800, "stream_type": "live", "name":
-        "live_user_cjs123456", "language": "zh-tw", "stream_count": 0, "video_bitrate":
-        359.984375, "channel_id": 25251409, "broadcaster": "fme", "video_codec": "AVC",
-        "channel_view_count": 31464}, {"subcategory": "radio_stations", "broadcast_part":
-        137, "featured": false, "channel_subscription": false, "audio_codec": "none",
-        "id": "5628504544", "category": "entertainment", "title": "", "geo": "ES",
-        "video_height": 240, "site_count": 0, "embed_enabled": false, "channel": {"views_count":
-        90620, "producer": false, "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/estacionoxigeno-profile_image-VytS5elM8Fc9juM-600x600.png",
-        "timezone": "Europe/Madrid", "screen_cap_url_huge": "http://static-cdn.jtvnw.net/previews/live_user_estacionoxigeno-630x473.jpg",
-        "id": "5628504544", "subcategory": "radio_stations", "category": "entertainment",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=estacionoxigeno\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=estacionoxigeno&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/estacionoxigeno#r=-rid-&amp;s=em\"
-        class=\"trk\" style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from estacionoxigeno on www.justin.tv</a>", "title": "estacionoxigeno",
-        "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/estacionoxigeno-profile_image-VytS5elM8Fc9juM-50x50.png",
-        "screen_cap_url_large": "http://static-cdn.jtvnw.net/previews/live_user_estacionoxigeno-320x240.jpg",
-        "embed_enabled": false, "status": "", "meta_game": "", "tags": null, "image_url_small":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/estacionoxigeno-profile_image-VytS5elM8Fc9juM-70x70.png",
-        "screen_cap_url_medium": "http://static-cdn.jtvnw.net/previews/live_user_estacionoxigeno-150x113.jpg",
-        "language": "es", "channel_url": "http://www.justin.tv/estacionoxigeno", "subcategory_title":
-        "Radio Stations", "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/estacionoxigeno-profile_image-VytS5elM8Fc9juM-150x150.png",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/estacionoxigeno-profile_image-VytS5elM8Fc9juM-300x300.png",
-        "mature": null, "screen_cap_url_small": "http://static-cdn.jtvnw.net/previews/live_user_estacionoxigeno-70x53.jpg",
-        "login": "estacionoxigeno", "category_title": "Entertainment"}, "up_time":
-        "Thu May  9 22:07:02 2013", "format": "live", "channel_count": 0, "embed_count":
-        0, "abuse_reported": false, "video_width": 320, "stream_type": "live", "name":
-        "live_user_estacionoxigeno", "language": "es", "stream_count": 0, "video_bitrate":
-        47.140625, "channel_id": 26009544, "broadcaster": "fme", "video_codec": "AVC",
-        "channel_view_count": 90131}, {"subcategory": "other_entertainment", "broadcast_part":
-        131, "featured": false, "channel_subscription": false, "audio_codec": "uncompressed",
-        "id": "5629334512", "category": "entertainment", "title": "La t\u00e9l\u00e9
-        des d\u00e9laiss\u00e9s", "geo": "CA", "video_height": 480, "site_count":
-        0, "embed_enabled": true, "channel": {"views_count": 23856, "producer": false,
-        "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/douteuxtele-profile_image-O6h2F91GMPjSXz5-600x600.jpg",
-        "timezone": "", "screen_cap_url_huge": "http://static-cdn.jtvnw.net/previews/live_user_douteuxtele-630x473.jpg",
-        "id": "5629334512", "subcategory": "other_entertainment", "category": "entertainment",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=douteuxtele\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=douteuxtele&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/douteuxtele#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from douteuxtele on www.justin.tv</a>", "title": "Douteux.tv, la t\u00e9l\u00e9
-        des d\u00e9laiss\u00e9s", "image_url_tiny": "http://static-cdn.jtvnw.net/jtv_user_pictures/douteuxtele-profile_image-O6h2F91GMPjSXz5-50x50.jpg",
-        "screen_cap_url_large": "http://static-cdn.jtvnw.net/previews/live_user_douteuxtele-320x240.jpg",
-        "embed_enabled": true, "status": "La t\u00e9l\u00e9 des d\u00e9laiss\u00e9s",
-        "meta_game": "", "tags": null, "image_url_small": "http://static-cdn.jtvnw.net/jtv_user_pictures/douteuxtele-profile_image-O6h2F91GMPjSXz5-70x70.jpg",
-        "screen_cap_url_medium": "http://static-cdn.jtvnw.net/previews/live_user_douteuxtele-150x113.jpg",
-        "language": "fr", "channel_url": "http://www.justin.tv/douteuxtele", "subcategory_title":
-        "Other Entertainment", "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/douteuxtele-profile_image-O6h2F91GMPjSXz5-150x150.jpg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/douteuxtele-profile_image-O6h2F91GMPjSXz5-300x300.jpg",
-        "mature": null, "screen_cap_url_small": "http://static-cdn.jtvnw.net/previews/live_user_douteuxtele-70x53.jpg",
-        "login": "douteuxtele", "category_title": "Entertainment"}, "up_time": "Fri
-        May 10 01:07:47 2013", "format": "live", "channel_count": 0, "embed_count":
-        0, "abuse_reported": false, "video_width": 720, "stream_type": "live", "name":
-        "live_user_douteuxtele", "language": "fr", "stream_count": 0, "video_bitrate":
-        925.6640625, "channel_id": 40974867, "broadcaster": "unknown_rtmp", "video_codec":
-        "AVC", "channel_view_count": 23540}, {"subcategory": "radio_stations", "broadcast_part":
-        307, "featured": false, "channel_subscription": false, "audio_codec": "mp3",
-        "id": "5597269552", "category": "entertainment", "title": "\u53f0\u7063\u5ee3\u64ad\u516c\u53f8
-        \u677e\u5dba\u8f49\u64ad\u53f0 AM630\u7dda\u4e0a\u6536\u807d", "geo": "TW",
-        "site_count": 0, "embed_enabled": true, "channel": {"views_count": 27941,
-        "producer": false, "image_url_huge": "http://static-cdn.jtvnw.net/jtv_user_pictures/am630-profile_image-2008efb6a1280d66-600x600.jpeg",
-        "timezone": "ROC", "screen_cap_url_huge": "http://static-cdn.jtvnw.net/previews/live_user_am630-630x473.jpg",
-        "id": "5597269552", "subcategory": "radio_stations", "category": "entertainment",
-        "embed_code": "<object type=\"application/x-shockwave-flash\" data=\"http://www.justin.tv/widgets/live_embed_player.swf?channel=am630\"
-        id=\"live_embed_player_flash\" height=\"300\" width=\"400\" bgcolor=\"#000000\"><param
-        name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\"
-        value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param
-        name=\"movie\" value=\"http://www.justin.tv/widgets/live_embed_player.swf\"
-        /><param name=\"flashvars\" value=\"hostname=www.justin.tv&channel=am630&auto_play=false&start_volume=25\"
-        /></object><a href=\"http://www.justin.tv/am630#r=-rid-&amp;s=em\" class=\"trk\"
-        style=\"padding:2px 0px 4px; display:block; width:345px; font-weight:normal;
-        font-size:10px; text-decoration:underline; text-align:center\">Watch live
-        video from am630 on www.justin.tv</a>", "title": "am630", "image_url_tiny":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/am630-profile_image-2008efb6a1280d66-50x50.jpeg",
-        "screen_cap_url_large": "http://static-cdn.jtvnw.net/previews/live_user_am630-320x240.jpg",
-        "embed_enabled": true, "status": "\u53f0\u7063\u5ee3\u64ad\u516c\u53f8 \u677e\u5dba\u8f49\u64ad\u53f0
-        AM630\u7dda\u4e0a\u6536\u807d", "meta_game": "", "tags": null, "image_url_small":
-        "http://static-cdn.jtvnw.net/jtv_user_pictures/am630-profile_image-2008efb6a1280d66-70x70.jpeg",
-        "screen_cap_url_medium": "http://static-cdn.jtvnw.net/previews/live_user_am630-150x113.jpg",
-        "language": "zh-TW", "channel_url": "http://www.justin.tv/am630", "subcategory_title":
-        "Radio Stations", "image_url_medium": "http://static-cdn.jtvnw.net/jtv_user_pictures/am630-profile_image-2008efb6a1280d66-150x150.jpeg",
-        "image_url_large": "http://static-cdn.jtvnw.net/jtv_user_pictures/am630-profile_image-2008efb6a1280d66-300x300.jpeg",
-        "mature": null, "screen_cap_url_small": "http://static-cdn.jtvnw.net/previews/live_user_am630-70x53.jpg",
-        "login": "am630", "category_title": "Entertainment"}, "up_time": "Mon May  6
-        08:48:51 2013", "format": "live", "channel_count": 0, "embed_count": 0, "abuse_reported":
-        false, "stream_type": "live", "name": "live_user_am630", "language": "zh-TW",
-        "stream_count": 0, "video_bitrate": 125.046875, "channel_id": 29504916, "broadcaster":
-        "fme", "channel_view_count": 27606}]'
+      string: '{"_total":112,"_links":{"self":"https://api.twitch.tv/kraken/search/streams?limit=10&offset=0&q=starcraft","next":"https://api.twitch.tv/kraken/search/streams?limit=10&offset=10&q=starcraft"},"streams":[{"_id":13311787520,"game":"StarCraft
+        II: Heart of the Swarm","viewers":1866,"created_at":"2015-02-24T22:07:11Z","preview":{"small":"http://static-cdn.jtvnw.net/previews-ttv/live_user_desrowfighting-80x45.jpg","medium":"http://static-cdn.jtvnw.net/previews-ttv/live_user_desrowfighting-320x180.jpg","large":"http://static-cdn.jtvnw.net/previews-ttv/live_user_desrowfighting-640x360.jpg","template":"http://static-cdn.jtvnw.net/previews-ttv/live_user_desrowfighting-{width}x{height}.jpg"},"_links":{"self":"https://api.twitch.tv/kraken/streams/desrowfighting"},"channel":{"mature":false,"status":"SC2Remax
+        EP29 w/ desRow, NaNiwa, Morrow, Nathanias & Rifkin!","broadcaster_language":"en","display_name":"desRowfighting","game":"StarCraft
+        II: Heart of the Swarm","delay":0,"language":"en","_id":18785568,"name":"desrowfighting","created_at":"2010-12-16T19:51:06Z","updated_at":"2015-02-25T00:17:09Z","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/desrowfighting-profile_image-a463f0a21516bb84-300x300.png","banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/desrowfighting-channel_header_image-25e2bef8d4d0ca5a-640x125.jpeg","video_banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/desrowfighting-channel_offline_image-2b4d401f4f2fb3b8-640x360.png","background":null,"profile_banner":null,"profile_banner_background_color":null,"partner":true,"url":"http://www.twitch.tv/desrowfighting","views":9654869,"followers":27549,"_links":{"self":"https://api.twitch.tv/kraken/channels/desrowfighting","follows":"https://api.twitch.tv/kraken/channels/desrowfighting/follows","commercial":"https://api.twitch.tv/kraken/channels/desrowfighting/commercial","stream_key":"https://api.twitch.tv/kraken/channels/desrowfighting/stream_key","chat":"https://api.twitch.tv/kraken/chat/desrowfighting","features":"https://api.twitch.tv/kraken/channels/desrowfighting/features","subscriptions":"https://api.twitch.tv/kraken/channels/desrowfighting/subscriptions","editors":"https://api.twitch.tv/kraken/channels/desrowfighting/editors","teams":"https://api.twitch.tv/kraken/channels/desrowfighting/teams","videos":"https://api.twitch.tv/kraken/channels/desrowfighting/videos"}}},{"_id":13312792176,"game":"StarCraft
+        II: Heart of the Swarm","viewers":1420,"created_at":"2015-02-24T23:22:54Z","preview":{"small":"http://static-cdn.jtvnw.net/previews-ttv/live_user_crank-80x45.jpg","medium":"http://static-cdn.jtvnw.net/previews-ttv/live_user_crank-320x180.jpg","large":"http://static-cdn.jtvnw.net/previews-ttv/live_user_crank-640x360.jpg","template":"http://static-cdn.jtvnw.net/previews-ttv/live_user_crank-{width}x{height}.jpg"},"_links":{"self":"https://api.twitch.tv/kraken/streams/crank"},"channel":{"mature":false,"status":"Ax.CranK
+        - D63 Troll mission games http://www.gosucrank.com","broadcaster_language":"en","display_name":"Crank","game":"StarCraft
+        II: Heart of the Swarm","delay":0,"language":"ko","_id":29267852,"name":"crank","created_at":"2012-03-25T13:43:40Z","updated_at":"2015-02-25T00:16:35Z","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/crank-profile_image-33aabd816e3506ca-300x300.png","banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/crank-channel_header_image-d5f2d14b0b6fe673-640x125.png","video_banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/crank-channel_offline_image-b93ba5c29b60c140-640x360.png","background":null,"profile_banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/crank-profile_banner-f241d4469fcde0ff-480.png","profile_banner_background_color":"#404040","partner":true,"url":"http://www.twitch.tv/crank","views":1413951,"followers":15094,"_links":{"self":"https://api.twitch.tv/kraken/channels/crank","follows":"https://api.twitch.tv/kraken/channels/crank/follows","commercial":"https://api.twitch.tv/kraken/channels/crank/commercial","stream_key":"https://api.twitch.tv/kraken/channels/crank/stream_key","chat":"https://api.twitch.tv/kraken/chat/crank","features":"https://api.twitch.tv/kraken/channels/crank/features","subscriptions":"https://api.twitch.tv/kraken/channels/crank/subscriptions","editors":"https://api.twitch.tv/kraken/channels/crank/editors","teams":"https://api.twitch.tv/kraken/channels/crank/teams","videos":"https://api.twitch.tv/kraken/channels/crank/videos"}}},{"_id":13312650992,"game":"StarCraft
+        II: Heart of the Swarm","viewers":324,"created_at":"2015-02-24T23:12:11Z","preview":{"small":"http://static-cdn.jtvnw.net/previews-ttv/live_user_ogamingsc2-80x45.jpg","medium":"http://static-cdn.jtvnw.net/previews-ttv/live_user_ogamingsc2-320x180.jpg","large":"http://static-cdn.jtvnw.net/previews-ttv/live_user_ogamingsc2-640x360.jpg","template":"http://static-cdn.jtvnw.net/previews-ttv/live_user_ogamingsc2-{width}x{height}.jpg"},"_links":{"self":"https://api.twitch.tv/kraken/streams/ogamingsc2"},"channel":{"mature":false,"status":"[FR]  MoMaN
+        en Ladder qui est chaud pour le defi : contre Anoss <3","broadcaster_language":"fr","display_name":"OgamingSC2","game":"StarCraft
+        II: Heart of the Swarm","delay":0,"language":"fr","_id":71852806,"name":"ogamingsc2","created_at":"2014-09-24T15:06:58Z","updated_at":"2015-02-25T00:16:59Z","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/ogamingsc2-profile_image-2bf049345c735a27-300x300.jpeg","banner":null,"video_banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/ogamingsc2-channel_offline_image-6984aa785a3e5b58-640x360.jpeg","background":null,"profile_banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/ogamingsc2-profile_banner-d418aed2c0ef7d35-480.jpeg","profile_banner_background_color":"null","partner":true,"url":"http://www.twitch.tv/ogamingsc2","views":2370634,"followers":10073,"_links":{"self":"https://api.twitch.tv/kraken/channels/ogamingsc2","follows":"https://api.twitch.tv/kraken/channels/ogamingsc2/follows","commercial":"https://api.twitch.tv/kraken/channels/ogamingsc2/commercial","stream_key":"https://api.twitch.tv/kraken/channels/ogamingsc2/stream_key","chat":"https://api.twitch.tv/kraken/chat/ogamingsc2","features":"https://api.twitch.tv/kraken/channels/ogamingsc2/features","subscriptions":"https://api.twitch.tv/kraken/channels/ogamingsc2/subscriptions","editors":"https://api.twitch.tv/kraken/channels/ogamingsc2/editors","teams":"https://api.twitch.tv/kraken/channels/ogamingsc2/teams","videos":"https://api.twitch.tv/kraken/channels/ogamingsc2/videos"}}},{"_id":13311503776,"game":"StarCraft
+        II: Heart of the Swarm","viewers":306,"created_at":"2015-02-24T21:47:04Z","preview":{"small":"http://static-cdn.jtvnw.net/previews-ttv/live_user_kaitlyn-80x45.jpg","medium":"http://static-cdn.jtvnw.net/previews-ttv/live_user_kaitlyn-320x180.jpg","large":"http://static-cdn.jtvnw.net/previews-ttv/live_user_kaitlyn-640x360.jpg","template":"http://static-cdn.jtvnw.net/previews-ttv/live_user_kaitlyn-{width}x{height}.jpg"},"_links":{"self":"https://api.twitch.tv/kraken/streams/kaitlyn"},"channel":{"mature":false,"status":"kaitlyn
+        - GM Zerg ! trying KR again again again.... again!","broadcaster_language":"en","display_name":"kaitlyn","game":"StarCraft
+        II: Heart of the Swarm","delay":0,"language":"en","_id":32882103,"name":"kaitlyn","created_at":"2012-08-09T17:33:48Z","updated_at":"2015-02-25T00:16:50Z","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/kaitlyn-profile_image-e7a0d995b85ab464-300x300.jpeg","banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/kaitlyn-channel_header_image-60cc2fd8cf1d9f91-640x125.png","video_banner":null,"background":null,"profile_banner":null,"profile_banner_background_color":null,"partner":true,"url":"http://www.twitch.tv/kaitlyn","views":2418309,"followers":33038,"_links":{"self":"https://api.twitch.tv/kraken/channels/kaitlyn","follows":"https://api.twitch.tv/kraken/channels/kaitlyn/follows","commercial":"https://api.twitch.tv/kraken/channels/kaitlyn/commercial","stream_key":"https://api.twitch.tv/kraken/channels/kaitlyn/stream_key","chat":"https://api.twitch.tv/kraken/chat/kaitlyn","features":"https://api.twitch.tv/kraken/channels/kaitlyn/features","subscriptions":"https://api.twitch.tv/kraken/channels/kaitlyn/subscriptions","editors":"https://api.twitch.tv/kraken/channels/kaitlyn/editors","teams":"https://api.twitch.tv/kraken/channels/kaitlyn/teams","videos":"https://api.twitch.tv/kraken/channels/kaitlyn/videos"}}},{"_id":13308834176,"game":"StarCraft
+        II: Heart of the Swarm","viewers":248,"created_at":"2015-02-24T18:43:04Z","preview":{"small":"http://static-cdn.jtvnw.net/previews-ttv/live_user_protech-80x45.jpg","medium":"http://static-cdn.jtvnw.net/previews-ttv/live_user_protech-320x180.jpg","large":"http://static-cdn.jtvnw.net/previews-ttv/live_user_protech-640x360.jpg","template":"http://static-cdn.jtvnw.net/previews-ttv/live_user_protech-{width}x{height}.jpg"},"_links":{"self":"https://api.twitch.tv/kraken/streams/protech"},"channel":{"mature":true,"status":"ProTech''s
+        2v2 Stream https://www.youtube.com/user/omik3y0","broadcaster_language":"en","display_name":"ProTech","game":"StarCraft
+        II: Heart of the Swarm","delay":0,"language":"en","_id":21124554,"name":"protech","created_at":"2011-03-14T10:46:33Z","updated_at":"2015-02-25T00:17:19Z","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/protech-profile_image-6267bafa2ec128f3-300x300.jpeg","banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/protech-channel_header_image-0690de35cb470858-640x125.jpeg","video_banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/protech-channel_offline_image-89aeeb0aab87d7ba-640x360.jpeg","background":null,"profile_banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/protech-profile_banner-bc04c0d84aed2ea7-480.jpeg","profile_banner_background_color":"#000000","partner":true,"url":"http://www.twitch.tv/protech","views":25336965,"followers":19518,"_links":{"self":"https://api.twitch.tv/kraken/channels/protech","follows":"https://api.twitch.tv/kraken/channels/protech/follows","commercial":"https://api.twitch.tv/kraken/channels/protech/commercial","stream_key":"https://api.twitch.tv/kraken/channels/protech/stream_key","chat":"https://api.twitch.tv/kraken/chat/protech","features":"https://api.twitch.tv/kraken/channels/protech/features","subscriptions":"https://api.twitch.tv/kraken/channels/protech/subscriptions","editors":"https://api.twitch.tv/kraken/channels/protech/editors","teams":"https://api.twitch.tv/kraken/channels/protech/teams","videos":"https://api.twitch.tv/kraken/channels/protech/videos"}}},{"_id":13312775568,"game":"StarCraft
+        II: Heart of the Swarm","viewers":221,"created_at":"2015-02-24T23:21:43Z","preview":{"small":"http://static-cdn.jtvnw.net/previews-ttv/live_user_incontroltv-80x45.jpg","medium":"http://static-cdn.jtvnw.net/previews-ttv/live_user_incontroltv-320x180.jpg","large":"http://static-cdn.jtvnw.net/previews-ttv/live_user_incontroltv-640x360.jpg","template":"http://static-cdn.jtvnw.net/previews-ttv/live_user_incontroltv-{width}x{height}.jpg"},"_links":{"self":"https://api.twitch.tv/kraken/streams/incontroltv"},"channel":{"mature":false,"status":"SC2
+        then CSGO for today!","broadcaster_language":"en","display_name":"iNcontroLTV","game":"StarCraft
+        II: Heart of the Swarm","delay":0,"language":"en","_id":20248706,"name":"incontroltv","created_at":"2011-02-07T06:24:25Z","updated_at":"2015-02-25T00:18:04Z","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/incontroltv-profile_image-0d27ec5834a2fc79-300x300.jpeg","banner":null,"video_banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/incontroltv-channel_offline_image-0914da708fec7197-640x360.jpeg","background":null,"profile_banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/incontroltv-profile_banner-c653a967e87e75a2-480.jpeg","profile_banner_background_color":null,"partner":true,"url":"http://www.twitch.tv/incontroltv","views":15847755,"followers":60590,"_links":{"self":"https://api.twitch.tv/kraken/channels/incontroltv","follows":"https://api.twitch.tv/kraken/channels/incontroltv/follows","commercial":"https://api.twitch.tv/kraken/channels/incontroltv/commercial","stream_key":"https://api.twitch.tv/kraken/channels/incontroltv/stream_key","chat":"https://api.twitch.tv/kraken/chat/incontroltv","features":"https://api.twitch.tv/kraken/channels/incontroltv/features","subscriptions":"https://api.twitch.tv/kraken/channels/incontroltv/subscriptions","editors":"https://api.twitch.tv/kraken/channels/incontroltv/editors","teams":"https://api.twitch.tv/kraken/channels/incontroltv/teams","videos":"https://api.twitch.tv/kraken/channels/incontroltv/videos"}}},{"_id":13313440416,"game":"StarCraft
+        II: Heart of the Swarm","viewers":135,"created_at":"2015-02-25T00:11:48Z","preview":{"small":"http://static-cdn.jtvnw.net/previews-ttv/live_user_gretorptv-80x45.jpg","medium":"http://static-cdn.jtvnw.net/previews-ttv/live_user_gretorptv-320x180.jpg","large":"http://static-cdn.jtvnw.net/previews-ttv/live_user_gretorptv-640x360.jpg","template":"http://static-cdn.jtvnw.net/previews-ttv/live_user_gretorptv-{width}x{height}.jpg"},"_links":{"self":"https://api.twitch.tv/kraken/streams/gretorptv"},"channel":{"mature":null,"status":"Learn
+        to Play: Starcraft","broadcaster_language":"en","display_name":"GretorpTV","game":"StarCraft
+        II: Heart of the Swarm","delay":0,"language":"en","_id":18906953,"name":"gretorptv","created_at":"2010-12-21T03:58:50Z","updated_at":"2015-02-25T00:16:18Z","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/gretorptv-profile_image-385d29c32e324f0a-300x300.jpeg","banner":null,"video_banner":null,"background":null,"profile_banner":null,"profile_banner_background_color":null,"partner":true,"url":"http://www.twitch.tv/gretorptv","views":796497,"followers":3288,"_links":{"self":"https://api.twitch.tv/kraken/channels/gretorptv","follows":"https://api.twitch.tv/kraken/channels/gretorptv/follows","commercial":"https://api.twitch.tv/kraken/channels/gretorptv/commercial","stream_key":"https://api.twitch.tv/kraken/channels/gretorptv/stream_key","chat":"https://api.twitch.tv/kraken/chat/gretorptv","features":"https://api.twitch.tv/kraken/channels/gretorptv/features","subscriptions":"https://api.twitch.tv/kraken/channels/gretorptv/subscriptions","editors":"https://api.twitch.tv/kraken/channels/gretorptv/editors","teams":"https://api.twitch.tv/kraken/channels/gretorptv/teams","videos":"https://api.twitch.tv/kraken/channels/gretorptv/videos"}}},{"_id":13313723728,"game":"StarCraft
+        II: Heart of the Swarm","viewers":9,"created_at":"2015-02-25T00:33:51Z","preview":{"small":"http://static-cdn.jtvnw.net/previews-ttv/live_user_pilipili96-80x45.jpg","medium":"http://static-cdn.jtvnw.net/previews-ttv/live_user_pilipili96-320x180.jpg","large":"http://static-cdn.jtvnw.net/previews-ttv/live_user_pilipili96-640x360.jpg","template":"http://static-cdn.jtvnw.net/previews-ttv/live_user_pilipili96-{width}x{height}.jpg"},"_links":{"self":"https://api.twitch.tv/kraken/streams/pilipili96"},"channel":{"mature":false,"status":"TOP
+        GM Protoss with commentary! ","broadcaster_language":"en","display_name":"PiLiPiLi96","game":"StarCraft
+        II: Heart of the Swarm","delay":0,"language":"en","_id":45018023,"name":"pilipili96","created_at":"2013-06-21T07:59:33Z","updated_at":"2015-02-25T00:33:51Z","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/pilipili96-profile_image-5b9a4285419cc99f-300x300.png","banner":null,"video_banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/pilipili96-channel_offline_image-0c30b92992a90f55-640x360.jpeg","background":null,"profile_banner":"http://static-cdn.jtvnw.net/jtv_user_pictures/pilipili96-profile_banner-572cea6967ea9716-480.jpeg","profile_banner_background_color":null,"partner":false,"url":"http://www.twitch.tv/pilipili96","views":256020,"followers":6550,"_links":{"self":"https://api.twitch.tv/kraken/channels/pilipili96","follows":"https://api.twitch.tv/kraken/channels/pilipili96/follows","commercial":"https://api.twitch.tv/kraken/channels/pilipili96/commercial","stream_key":"https://api.twitch.tv/kraken/channels/pilipili96/stream_key","chat":"https://api.twitch.tv/kraken/chat/pilipili96","features":"https://api.twitch.tv/kraken/channels/pilipili96/features","subscriptions":"https://api.twitch.tv/kraken/channels/pilipili96/subscriptions","editors":"https://api.twitch.tv/kraken/channels/pilipili96/editors","teams":"https://api.twitch.tv/kraken/channels/pilipili96/teams","videos":"https://api.twitch.tv/kraken/channels/pilipili96/videos"}}},{"_id":13299689360,"game":"StarCraft:
+        Brood War","viewers":8,"created_at":"2015-02-24T01:03:49Z","preview":{"small":"http://static-cdn.jtvnw.net/previews-ttv/live_user_snipealot2-80x45.jpg","medium":"http://static-cdn.jtvnw.net/previews-ttv/live_user_snipealot2-320x180.jpg","large":"http://static-cdn.jtvnw.net/previews-ttv/live_user_snipealot2-640x360.jpg","template":"http://static-cdn.jtvnw.net/previews-ttv/live_user_snipealot2-{width}x{height}.jpg"},"_links":{"self":"https://api.twitch.tv/kraken/streams/snipealot2"},"channel":{"mature":false,"status":"41TV","broadcaster_language":null,"display_name":"snipealot2","game":"StarCraft:
+        Brood War","delay":0,"language":"en","_id":36329968,"name":"snipealot2","created_at":"2012-09-21T06:03:59Z","updated_at":"2015-02-25T00:18:02Z","logo":"http://static-cdn.jtvnw.net/jtv_user_pictures/snipealot2-profile_image-d896cd66d334d79e-300x300.jpeg","banner":null,"video_banner":null,"background":null,"profile_banner":null,"profile_banner_background_color":null,"partner":true,"url":"http://www.twitch.tv/snipealot2","views":5169961,"followers":4300,"_links":{"self":"https://api.twitch.tv/kraken/channels/snipealot2","follows":"https://api.twitch.tv/kraken/channels/snipealot2/follows","commercial":"https://api.twitch.tv/kraken/channels/snipealot2/commercial","stream_key":"https://api.twitch.tv/kraken/channels/snipealot2/stream_key","chat":"https://api.twitch.tv/kraken/chat/snipealot2","features":"https://api.twitch.tv/kraken/channels/snipealot2/features","subscriptions":"https://api.twitch.tv/kraken/channels/snipealot2/subscriptions","editors":"https://api.twitch.tv/kraken/channels/snipealot2/editors","teams":"https://api.twitch.tv/kraken/channels/snipealot2/teams","videos":"https://api.twitch.tv/kraken/channels/snipealot2/videos"}}}]}'
     http_version: 
-  recorded_at: Mon, 13 May 2013 01:15:45 GMT
-recorded_with: VCR 2.4.0
+  recorded_at: Wed, 25 Feb 2015 00:39:20 GMT
+recorded_with: VCR 2.9.3

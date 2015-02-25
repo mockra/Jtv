@@ -7,22 +7,23 @@ describe Jtv::Stream do
 
   describe '#summary' do
     it 'sends summary and params to get' do
-      client.should_receive(:get).with 'stream/summary.json',
+      expect(client).to receive(:get).with 'streams/summary.json',
         { channel: 'test' }
       client.summary channel: 'test'
     end
   end
 
-  describe '#list' do
-    it 'sends list and params to get' do
-      client.should_receive(:get).with 'stream/list.json', { channel: 'test' }
-      client.list channel: 'test'
+  describe '#featured' do
+    it 'sends featured and params to get' do
+      expect(client).to receive(:get).with 'streams/featured.json',
+        { channel: 'test' }
+      client.featured channel: 'test'
     end
   end
 
   describe '#search' do
     it 'sends search and params to get' do
-      client.should_receive(:get).with 'stream/search/test%20ruby.json',
+      expect(client).to receive(:get).with 'search/streams.json?q=test%20ruby',
         { limit: 50 }
       client.search 'test ruby', limit: 50
     end

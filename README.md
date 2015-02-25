@@ -105,17 +105,6 @@ Returns extended information for a user, specified by user id or login.
 
 Pass in a user's login.
 
-#### Favorites
-
-Get all channels who are favorites of a user.
-
-```ruby
-  Jtv.favorites 'mockra'
-  # [{}]
-```
-
-Pass in a user's login.
-
 ### Channel
 
 #### Show
@@ -157,29 +146,6 @@ channels.
 channel id or login must be included as a param. Optional limit and offset
 params (defaults are 20 for limit and 0 for offset). Results returned are
 limited to 100. Results are returned in create date order
-
-#### Embed
-
-Get embed code for a channel.
-
-```ruby
-  Jtv.embed 'justin', volume: 50
-  # "<object></object>"
-```
-
-You can supply params volume, publisher_guard (for the default channel password
-to try), height, width, and watermark_position
-
-#### Chat Embed
-
-Get chat embed code for a channel.
-
-```ruby
-  Jtv.chat_embed 'justin', height: 1000
-  # "<iframe></iframe>"
-```
-
-You can supply params height and width.
 
 ## Contributing
 
